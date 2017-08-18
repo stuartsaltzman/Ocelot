@@ -16,10 +16,13 @@ using AuthenticationOptions = Ocelot.Configuration.AuthenticationOptions;
 
 namespace Ocelot.UnitTests.Authentication
 {
+    using Microsoft.Extensions.DependencyInjection;
+
     public class AuthenticationHandlerFactoryTests
     {
         private readonly IAuthenticationHandlerFactory _authenticationHandlerFactory;
         private readonly Mock<IApplicationBuilder> _app;
+        private readonly Mock<IServiceCollection> _services;
         private readonly Mock<IAuthenticationHandlerCreator> _creator;
         private AuthenticationOptions _authenticationOptions;
         private Response<AuthenticationHandler> _result;
@@ -28,6 +31,7 @@ namespace Ocelot.UnitTests.Authentication
         {
             _app = new Mock<IApplicationBuilder>();
             _creator = new Mock<IAuthenticationHandlerCreator>();
+            _services = new Mock<IServiceCollection>();
             _authenticationHandlerFactory = new AuthenticationHandlerFactory(_creator.Object);
         }
 
@@ -68,7 +72,7 @@ namespace Ocelot.UnitTests.Authentication
         private void GivenTheCreatorReturnsAnError()
         {
             _creator
-                .Setup(x => x.Create(It.IsAny<IApplicationBuilder>(), It.IsAny<AuthenticationOptions>()))
+                .Setup(x => x.Create(It.IsAny<IApplicationBuilder>(), It.IsAny<AuthenticationOptions>(), It.IsAny<IServiceCollection>()))
                 .Returns(new ErrorResponse<RequestDelegate>(new List<Error>
             {
                 new UnableToCreateAuthenticationHandlerError($"Unable to create authentication handler for xxx")
@@ -78,13 +82,13 @@ namespace Ocelot.UnitTests.Authentication
         private void GivenTheCreatorReturns()
         {
             _creator
-                .Setup(x => x.Create(It.IsAny<IApplicationBuilder>(), It.IsAny<AuthenticationOptions>()))
+                .Setup(x => x.Create(It.IsAny<IApplicationBuilder>(), It.IsAny<AuthenticationOptions>(), It.IsAny<IServiceCollection>()))
                 .Returns(new OkResponse<RequestDelegate>(x => Task.CompletedTask));
         }
 
         private void WhenIGetFromTheFactory()
         {
-            _result = _authenticationHandlerFactory.Get(_app.Object, _authenticationOptions);
+            _result = _authenticationHandlerFactory.Get(_app.Object, _authenticationOptions, _services.Object);
         }
 
         private void ThenTheHandlerIsReturned(string expected)

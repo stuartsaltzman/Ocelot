@@ -4,10 +4,11 @@ using Ocelot.Responses;
 
 namespace Ocelot.Authentication.Handler.Creator
 {
+    using Microsoft.Extensions.DependencyInjection;
     using AuthenticationOptions = Configuration.AuthenticationOptions;
 
     public interface IAuthenticationHandlerCreator
     {
-        Response<RequestDelegate> Create(IApplicationBuilder app, AuthenticationOptions authOptions);
+        Response<RequestDelegate> Create(IApplicationBuilder app, AuthenticationOptions authOptions, IServiceCollection services);
     }
 }

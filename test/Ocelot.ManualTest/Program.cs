@@ -9,7 +9,9 @@ namespace Ocelot.ManualTest
         public static void Main(string[] args)
         {
             IWebHostBuilder builder = new WebHostBuilder();
-            
+
+            builder.UseUrls("http://localhost:1337");
+
             builder.ConfigureServices(s => {
                 s.AddSingleton(builder);
             });

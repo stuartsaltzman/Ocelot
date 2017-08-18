@@ -12,22 +12,27 @@ using Ocelot.Middleware;
 
 namespace Ocelot.Authentication.Middleware
 {
+    using Microsoft.Extensions.DependencyInjection;
+
     public class AuthenticationMiddleware : OcelotMiddleware
     {
         private readonly RequestDelegate _next;
         private readonly IApplicationBuilder _app;
         private readonly IAuthenticationHandlerFactory _authHandlerFactory;
+        private readonly IServiceCollection _services;
         private readonly IOcelotLogger _logger;
 
         public AuthenticationMiddleware(RequestDelegate next,
             IApplicationBuilder app,
             IRequestScopedDataRepository requestScopedDataRepository,
             IAuthenticationHandlerFactory authHandlerFactory,
-            IOcelotLoggerFactory loggerFactory)
+            IOcelotLoggerFactory loggerFactory,
+            IServiceCollection services)
             : base(requestScopedDataRepository)
         {
             _next = next;
             _authHandlerFactory = authHandlerFactory;
+            _services = services;
             _app = app;
             _logger = loggerFactory.CreateLogger<AuthenticationMiddleware>();
         }
@@ -38,7 +43,7 @@ namespace Ocelot.Authentication.Middleware
             {
                 _logger.LogDebug($"{context.Request.Path} is an authenticated route. {MiddlewareName} checking if client is authenticated");
 
-                var authenticationHandler = _authHandlerFactory.Get(_app, DownstreamRoute.ReRoute.AuthenticationOptions);
+                var authenticationHandler = _authHandlerFactory.Get(_app, DownstreamRoute.ReRoute.AuthenticationOptions, _services);
 
                 if (authenticationHandler.IsError)
                 {

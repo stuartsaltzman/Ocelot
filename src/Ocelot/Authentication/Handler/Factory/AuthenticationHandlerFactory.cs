@@ -6,6 +6,7 @@ using Ocelot.Responses;
 
 namespace Ocelot.Authentication.Handler.Factory
 {
+    using Microsoft.Extensions.DependencyInjection;
     using AuthenticationOptions = Configuration.AuthenticationOptions;
 
     public class AuthenticationHandlerFactory : IAuthenticationHandlerFactory
@@ -17,9 +18,9 @@ namespace Ocelot.Authentication.Handler.Factory
             _creator = creator;
         }
 
-        public Response<AuthenticationHandler> Get(IApplicationBuilder app, AuthenticationOptions authOptions)
+        public Response<AuthenticationHandler> Get(IApplicationBuilder app, AuthenticationOptions authOptions, IServiceCollection services)
         {
-            var handler = _creator.Create(app, authOptions);
+            var handler = _creator.Create(app, authOptions, services);
 
             if (!handler.IsError)
             {

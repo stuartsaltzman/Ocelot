@@ -41,11 +41,11 @@ namespace Ocelot.ManualTest
             services.AddOcelot(Configuration, settings);
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IServiceCollection services)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
 
-            app.UseOcelot().Wait();
+            app.UseOcelot(services).Wait();
         }
     }
 }

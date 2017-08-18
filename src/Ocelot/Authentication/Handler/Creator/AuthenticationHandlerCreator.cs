@@ -6,6 +6,8 @@ using Ocelot.Responses;
 
 namespace Ocelot.Authentication.Handler.Creator
 {
+    using Microsoft.AspNetCore.Authentication.JwtBearer;
+    using Microsoft.Extensions.DependencyInjection;
     using Ocelot.Configuration;
 
     using AuthenticationOptions = Configuration.AuthenticationOptions;
@@ -15,7 +17,7 @@ namespace Ocelot.Authentication.Handler.Creator
     /// </summary>
     public class AuthenticationHandlerCreator : IAuthenticationHandlerCreator
     {
-        public Response<RequestDelegate> Create(IApplicationBuilder app, AuthenticationOptions authOptions)
+        public Response<RequestDelegate> Create(IApplicationBuilder app, AuthenticationOptions authOptions, IServiceCollection services)
         {
             var builder = app.New();
 
@@ -23,27 +25,26 @@ namespace Ocelot.Authentication.Handler.Creator
             {
                 var authenticationConfig = authOptions.Config as JwtConfig;
 
-                builder.UseJwtBearerAuthentication(
-                    new JwtBearerOptions()
-                        {
-                            Authority = authenticationConfig.Authority,
-                            Audience = authenticationConfig.Audience
-                        });
+                services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(x =>
+                {
+                    x.Authority = authenticationConfig.Authority;
+                    x.Audience = authenticationConfig.Audience;
+                });
+
             }
             else
             {
                 var authenticationConfig = authOptions.Config as IdentityServerConfig;
 
-                builder.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions
+                services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(x =>
                 {
-                    Authority = authenticationConfig.ProviderRootUrl,
-                    ApiName = authenticationConfig.ApiName,
-                    RequireHttpsMetadata = authenticationConfig.RequireHttps,
-                    AllowedScopes = authOptions.AllowedScopes,
-                    SupportedTokens = SupportedTokens.Both,
-                    ApiSecret = authenticationConfig.ApiSecret
+                    x.Authority = authenticationConfig.ProviderRootUrl;
+                    x.Audience = authenticationConfig.ApiName;
+                    x.RequireHttpsMetadata = authenticationConfig.RequireHttps;
                 });
             }
+
+            builder.UseAuthentication();
 
             var authenticationNext = builder.Build();
 

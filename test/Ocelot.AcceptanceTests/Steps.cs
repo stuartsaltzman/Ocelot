@@ -128,6 +128,8 @@ namespace Ocelot.AcceptanceTests
         /// </summary>
         public void GivenOcelotIsRunning(OcelotMiddlewareConfiguration ocelotMiddlewareConfig)
         {
+            IServiceCollection services = null;
+
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
@@ -147,6 +149,7 @@ namespace Ocelot.AcceptanceTests
                 .UseConfiguration(configuration)
                 .ConfigureServices(s =>
                 {
+                    services = s;
                     Action<ConfigurationBuilderCachePart> settings = (x) =>
                     {
                         x.WithMicrosoftLogging(log =>
@@ -160,12 +163,12 @@ namespace Ocelot.AcceptanceTests
                 })
                 .ConfigureLogging(l =>
                 {
-                    l.AddConsole(configuration.GetSection("Logging"));
+                    l.AddConsole();
                     l.AddDebug();
                 })
                 .Configure(a =>
                 {
-                    a.UseOcelot(ocelotMiddlewareConfig).Wait();
+                    a.UseOcelot(ocelotMiddlewareConfig, services).Wait();
                 }));
 
             _ocelotClient = _ocelotServer.CreateClient();

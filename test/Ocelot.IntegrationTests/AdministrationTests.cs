@@ -376,6 +376,8 @@ namespace Ocelot.IntegrationTests
 
         private void GivenOcelotIsRunning()
         {
+            SetEnvironmentVariables();
+
             _webHostBuilder = new WebHostBuilder()
                 .UseUrls(_ocelotBaseUrl)
                 .UseKestrel()
@@ -434,10 +436,25 @@ namespace Ocelot.IntegrationTests
 
         public void Dispose()
         {
-            Environment.SetEnvironmentVariable("OCELOT_CERTIFICATE", "");
-            Environment.SetEnvironmentVariable("OCELOT_CERTIFICATE_PASSWORD", "");
+            ClearEnvironmentVariables();
             _builder?.Dispose();
             _httpClient?.Dispose();
+        }
+
+        private void SetEnvironmentVariables()
+        {
+            Environment.SetEnvironmentVariable("OCELOT_USERNAME", "admin");
+            Environment.SetEnvironmentVariable("OCELOT_HASH", "m4E4RkbEajgNgjH2vUC6AdW9sC8R5LwmqWauA42CNNU=");
+            Environment.SetEnvironmentVariable("OCELOT_SALT", "X3KsroMlxYNL74mz4Cr80g==");
+        }
+
+        private void ClearEnvironmentVariables() 
+        {
+            Environment.SetEnvironmentVariable("OCELOT_CERTIFICATE", String.Empty);
+            Environment.SetEnvironmentVariable("OCELOT_CERTIFICATE_PASSWORD", String.Empty);
+            Environment.SetEnvironmentVariable("OCELOT_USERNAME", String.Empty);
+            Environment.SetEnvironmentVariable("OCELOT_HASH", String.Empty);
+            Environment.SetEnvironmentVariable("OCELOT_SALT", String.Empty);
         }
     }
 }

@@ -18,36 +18,29 @@ namespace Ocelot.Configuration.Authentication
             _matcher = matcher;
         }
 
-        public async Task ValidateAsync(ResourceOwnerPasswordValidationContext context)
+        public Task ValidateAsync(ResourceOwnerPasswordValidationContext context)
         {
-            try
-            {
-                var user = _identityServerConfiguration.Users.FirstOrDefault(u => u.UserName == context.UserName);
-
-                if(user == null)
-                {
-                    context.Result = new GrantValidationResult(
-                            TokenRequestErrors.InvalidGrant,
-                            "invalid custom credential");
-                }
-                else if(_matcher.Match(context.Password, user.Salt, user.Hash))
-                {
-                    context.Result = new GrantValidationResult(
-                        subject: "admin",
-                        authenticationMethod: "custom");
-                }
-                else
-                {
-                    context.Result = new GrantValidationResult(
-                        TokenRequestErrors.InvalidGrant,
-                        "invalid custom credential");
-                }
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine(ex);
-            }
-
+			var user = _identityServerConfiguration.Users.FirstOrDefault(u => u.UserName == context.UserName);
+			if(user == null)
+			{
+				context.Result = new GrantValidationResult(
+						TokenRequestErrors.InvalidGrant,
+						"invalid custom credential");
+			}
+			else if(_matcher.Match(context.Password, user.Salt, user.Hash))
+			{
+				context.Result = new GrantValidationResult(
+					subject: "admin",
+					authenticationMethod: "custom");
+			}
+			else
+			{
+				context.Result = new GrantValidationResult(
+					TokenRequestErrors.InvalidGrant,
+					"invalid custom credential");
+			}
+	        return Task.CompletedTask;
         }
+
     }
 }

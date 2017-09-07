@@ -7,12 +7,12 @@ namespace Ocelot.Request.Builder
 {
     public sealed class HttpRequestCreator : IRequestCreator
     {
-        public async Task<Response<Request>> Build(
+        public Task<Response<Request>> Build(
             HttpRequestMessage httpRequestMessage,
             bool isQos,
             IQoSProvider qosProvider)
         {
-            return new OkResponse<Request>(new Request(httpRequestMessage, isQos, qosProvider));
+            return Task.FromResult<Response<Request>>(new OkResponse<Request>(new Request(httpRequestMessage, isQos, qosProvider)));
         }
     }
 }

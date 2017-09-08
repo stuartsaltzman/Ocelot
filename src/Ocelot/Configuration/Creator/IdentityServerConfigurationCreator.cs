@@ -8,13 +8,19 @@ namespace Ocelot.Configuration.Creator
 {
     public static class IdentityServerConfigurationCreator
     {
+        public static String OCELOT_ADMIN_USERNAME_ENV_NAME = "OCELOT_USERNAME";
+        public static String OCELOT_ADMIN_HASH_ENV_NAME = "OCELOT_HASH";
+        public static String OCELOT_ADMIN_SALT_ENV_NAME = "OCELOT_SALT";
+        public static String OCELOT_CERTIFICATE_ENV_NAME = "OCELOT_CERTIFICATE";
+        public static String OCELOT_CERTIFICATE_PASSWORD_ENV_NAME = "OCELOT_CERTIFICATE_PASSWORD";
+
         public static IdentityServerConfiguration GetIdentityServerConfiguration()
         {
-            var username = Environment.GetEnvironmentVariable("OCELOT_USERNAME");
-            var hash = Environment.GetEnvironmentVariable("OCELOT_HASH");
-            var salt = Environment.GetEnvironmentVariable("OCELOT_SALT");
-            var credentialsSigningCertificateLocation = Environment.GetEnvironmentVariable("OCELOT_CERTIFICATE");
-            var credentialsSigningCertificatePassword = Environment.GetEnvironmentVariable("OCELOT_CERTIFICATE_PASSWORD");
+            var username = Environment.GetEnvironmentVariable(OCELOT_ADMIN_USERNAME_ENV_NAME);
+            var hash = Environment.GetEnvironmentVariable(OCELOT_ADMIN_HASH_ENV_NAME);
+            var salt = Environment.GetEnvironmentVariable(OCELOT_ADMIN_SALT_ENV_NAME);
+            var credentialsSigningCertificateLocation = Environment.GetEnvironmentVariable(OCELOT_CERTIFICATE_ENV_NAME);
+            var credentialsSigningCertificatePassword = Environment.GetEnvironmentVariable(OCELOT_CERTIFICATE_PASSWORD_ENV_NAME);
 
             return new IdentityServerConfiguration(
                 "admin",

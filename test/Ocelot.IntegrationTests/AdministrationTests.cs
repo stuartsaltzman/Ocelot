@@ -315,15 +315,15 @@ namespace Ocelot.IntegrationTests
 
         private void GivenIdentityServerSigningEnvironmentalVariablesAreSet()
         {
-            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.OCELOT_CERTIFICATE_ENV_NAME, "idsrv3test.pfx");
-            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.OCELOT_CERTIFICATE_PASSWORD_ENV_NAME, "idsrv3test");
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.Certificate, "idsrv3test.pfx");
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.CertificatePassword, "idsrv3test");
         }
 	    
 	    private void GivenIdentityServerAdminEnvironmentalVariablesAreSet()
 	    {
-		    Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.OCELOT_ADMIN_USERNAME_ENV_NAME, AdminUserName);
-		    Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.OCELOT_ADMIN_HASH_ENV_NAME, _userCredentialHash);
-		    Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.OCELOT_ADMIN_SALT_ENV_NAME, _userCredentialSalt);
+		    Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.AdminUserName, AdminUserName);
+		    Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.AdminHash, _userCredentialHash);
+		    Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.AdminSalt, _userCredentialSalt);
 	    }
 
         private void WhenIGetUrlOnTheSecondOcelot(string url)
@@ -463,11 +463,11 @@ namespace Ocelot.IntegrationTests
 
         private void ClearEnvironmentVariables() 
         {
-            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.OCELOT_ADMIN_USERNAME_ENV_NAME, String.Empty);
-            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.OCELOT_ADMIN_HASH_ENV_NAME, String.Empty);
-            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.OCELOT_ADMIN_SALT_ENV_NAME, String.Empty);
-            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.OCELOT_CERTIFICATE_ENV_NAME, String.Empty);
-            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.OCELOT_CERTIFICATE_PASSWORD_ENV_NAME, String.Empty);
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.AdminUserName, String.Empty);
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.AdminHash, String.Empty);
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.AdminSalt, String.Empty);
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.Certificate, String.Empty);
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.CertificatePassword, String.Empty);
         }
 
     }

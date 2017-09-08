@@ -2,25 +2,29 @@
 using System.Collections.Generic;
 using IdentityServer4.AccessTokenValidation;
 using IdentityServer4.Models;
+using Microsoft.Extensions.Configuration.EnvironmentVariables;
 using Ocelot.Configuration.Provider;
 
 namespace Ocelot.Configuration.Creator
 {
     public static class IdentityServerConfigurationCreator
     {
-        public static String OCELOT_ADMIN_USERNAME_ENV_NAME = "OCELOT_USERNAME";
-        public static String OCELOT_ADMIN_HASH_ENV_NAME = "OCELOT_HASH";
-        public static String OCELOT_ADMIN_SALT_ENV_NAME = "OCELOT_SALT";
-        public static String OCELOT_CERTIFICATE_ENV_NAME = "OCELOT_CERTIFICATE";
-        public static String OCELOT_CERTIFICATE_PASSWORD_ENV_NAME = "OCELOT_CERTIFICATE_PASSWORD";
-
+	    public static class EnvironmentVariables
+	    {
+			public static string AdminUserName = "OCELOT_USERNAME";
+			public static string AdminHash = "OCELOT_HASH";
+			public static string AdminSalt = "OCELOT_SALT";
+			public static string Certificate = "OCELOT_CERTIFICATE";
+			public static string CertificatePassword = "OCELOT_CERTIFICATE_PASSWORD";
+	    }
+        
         public static IdentityServerConfiguration GetIdentityServerConfiguration()
         {
-            var username = Environment.GetEnvironmentVariable(OCELOT_ADMIN_USERNAME_ENV_NAME);
-            var hash = Environment.GetEnvironmentVariable(OCELOT_ADMIN_HASH_ENV_NAME);
-            var salt = Environment.GetEnvironmentVariable(OCELOT_ADMIN_SALT_ENV_NAME);
-            var credentialsSigningCertificateLocation = Environment.GetEnvironmentVariable(OCELOT_CERTIFICATE_ENV_NAME);
-            var credentialsSigningCertificatePassword = Environment.GetEnvironmentVariable(OCELOT_CERTIFICATE_PASSWORD_ENV_NAME);
+            var username = Environment.GetEnvironmentVariable(EnvironmentVariables.AdminUserName);
+            var hash = Environment.GetEnvironmentVariable(EnvironmentVariables.AdminHash);
+            var salt = Environment.GetEnvironmentVariable(EnvironmentVariables.AdminSalt);
+            var credentialsSigningCertificateLocation = Environment.GetEnvironmentVariable(EnvironmentVariables.Certificate);
+            var credentialsSigningCertificatePassword = Environment.GetEnvironmentVariable(EnvironmentVariables.CertificatePassword);
 
             return new IdentityServerConfiguration(
                 "admin",

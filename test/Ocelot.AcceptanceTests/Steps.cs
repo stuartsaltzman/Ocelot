@@ -73,19 +73,18 @@ namespace Ocelot.AcceptanceTests
         /// </summary>
         public void GivenOcelotIsRunning()
         {
-             _webHostBuilder = new WebHostBuilder();
-            
-            _webHostBuilder.ConfigureServices(s => 
-            {
-                s.AddSingleton(_webHostBuilder);
-            });
+             _webHostBuilder = new WebHostBuilder()
+				.ConfigureServices(s => 
+				{
+					s.AddSingleton(_webHostBuilder);
+				});
 
             _ocelotServer = new TestServer(_webHostBuilder
                 .UseStartup<Startup>());
 
             _ocelotClient = _ocelotServer.CreateClient();
         }
-
+	    
         public void GivenOcelotIsRunningUsingConsulToStoreConfig(ConsulRegistryConfiguration consulConfig)
         {
             _webHostBuilder = new WebHostBuilder();

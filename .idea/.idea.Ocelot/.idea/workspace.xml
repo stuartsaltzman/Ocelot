@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f9db713-33c0-4b93-8b57-95a5fa10da98" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/contentModel.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/indexLayout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/riderModule.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/run-integration-tests.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/run-unit-tests.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.cake" afterPath="$PROJECT_DIR$/build.cake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs" afterPath="$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Configuration/Repository/InMemoryOcelotConfigurationRepository.cs" afterPath="$PROJECT_DIR$/src/Ocelot/Configuration/Repository/InMemoryOcelotConfigurationRepository.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" afterPath="$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Middleware/OcelotMiddlewareExtensions.cs" afterPath="$PROJECT_DIR$/src/Ocelot/Middleware/OcelotMiddlewareExtensions.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Ocelot.csproj" afterPath="$PROJECT_DIR$/src/Ocelot/Ocelot.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/AuthenticationTests.cs" afterPath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/AuthenticationTests.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/AuthorisationTests.cs" afterPath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/AuthorisationTests.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/ClaimsToHeadersForwardingTests.cs" afterPath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/ClaimsToHeadersForwardingTests.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/ClaimsToQueryStringForwardingTests.cs" afterPath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/ClaimsToQueryStringForwardingTests.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/Ocelot.AcceptanceTests.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/Ocelot.AcceptanceTests.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/Steps.cs" afterPath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/Steps.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.IntegrationTests/Ocelot.IntegrationTests.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.IntegrationTests/Ocelot.IntegrationTests.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.ManualTest/Ocelot.ManualTest.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.ManualTest/Ocelot.ManualTest.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.ManualTest/Program.cs" afterPath="$PROJECT_DIR$/test/Ocelot.ManualTest/Program.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.ManualTest/Startup.cs" afterPath="$PROJECT_DIR$/test/Ocelot.ManualTest/Startup.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.UnitTests/Ocelot.UnitTests.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.UnitTests/Ocelot.UnitTests.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/packages.config" afterPath="$PROJECT_DIR$/tools/packages.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AuthenticationHandlerCreator.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthenticationHandlerCreator.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <marker date="1506341536000" expanded="false" signature="6:204" ph="..." />
                 <marker date="1506341536000" expanded="true" signature="253:2063" ph="{...}" />
@@ -51,10 +27,30 @@
                 <marker date="1506341536000" expanded="true" signature="553:2061" ph="{...}" />
                 <marker date="1506341536000" expanded="true" signature="667:2055" ph="{...}" />
                 <marker date="1506341536000" expanded="true" signature="772:1227" ph="{...}" />
-                <marker date="1506341536000" expanded="true" signature="922:1213" ph="/* builder.UseJwtBearerAuthentication( ... */" />
+                <marker date="1506341536000" expanded="true" signature="889:1213" ph="/* TODO: fix me ... */" />
                 <marker date="1506341536000" expanded="true" signature="1244:1917" ph="{...}" />
-                <marker date="1506341536000" expanded="true" signature="1367:1903" ph="/* builder.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions ... */" />
+                <marker date="1506341536000" expanded="true" signature="1350:1903" ph="/* TODO: fix me ... */" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build-and-release-unstable.ps1" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build-and-release-unstable.ps1">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="829">
+              <caret line="247" column="21" lean-forward="true" selection-start-line="247" selection-start-column="21" selection-end-line="247" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,52 +83,6 @@
                 <marker date="1504283600000" expanded="true" signature="1213:1456" ph="{...}" />
                 <marker date="1504283600000" expanded="true" signature="1279:1367" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceCollectionExtensions.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="252" column="15" lean-forward="false" selection-start-line="252" selection-start-column="15" selection-end-line="252" selection-end-column="15" />
-              <folding>
-                <marker date="1506280607000" expanded="false" signature="6:1816" ph="..." />
-                <marker date="1506280607000" expanded="true" signature="1854:15323" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="1908:15321" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="2067:2300" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="2472:11861" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="4879:7935" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="5168:5254" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="5343:6202" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="5409:6180" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="5921:6154" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="5998:6124" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="6281:7023" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="6342:7001" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="7292:7477" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="7498:7791" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="11197:11425" ph="/* see this for why we register this as singleton http://stackoverflow.com/questions/37371264/invalidoperationexc ... */" />
-                <marker date="1506280607000" expanded="true" signature="12085:13360" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="12108:12508" ph="/* var fileConfig = (IOptions&lt;FileConfiguration&gt;)builder.ApplicationServices.GetService(typeof(IOptions&lt;FileConfi ... */" />
-                <marker date="1506280607000" expanded="true" signature="12688:12986" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="12828:12972" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="13161:13304" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="13715:15315" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="14094:15305" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="14378:15289" ph="{...}" />
-                <marker date="1506280607000" expanded="true" signature="14640:15143" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IdentityServerAuthenticationDefaults.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02B9092-E3D7-447C-8DBC-C3138C20EC46/36/5b706f04/IdentityServerAuthenticationDefaults.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -441,6 +391,7 @@
         <option value="$PROJECT_DIR$/src/Ocelot/Middleware/OcelotMiddlewareExtensions.cs" />
         <option value="$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" />
         <option value="$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -451,7 +402,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2048" />
+    <option name="x" value="1926" />
     <option name="y" value="142" />
     <option name="width" value="1896" />
     <option name="height" value="1058" />
@@ -482,70 +433,17 @@
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Solution Items" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Authentication" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Authentication" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Handler" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Authentication" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Handler" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Creator" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Authentication" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Middleware" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="DependencyInjection" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Middleware" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="test" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="test" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot.ManualTest" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -709,12 +607,12 @@
       <workItem from="1506194798076" duration="1043000" />
       <workItem from="1506195986782" duration="236000" />
       <workItem from="1506196440831" duration="596000" />
-      <workItem from="1506197103514" duration="10379000" />
+      <workItem from="1506197103514" duration="10597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43804000" />
+    <option name="totallyTimeSpent" value="44022000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -726,7 +624,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2048" y="142" width="1896" height="1058" extended-state="0" />
+    <frame x="1926" y="142" width="1896" height="1058" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -755,6 +653,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.gitignore" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -765,20 +666,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/ClientRateLimitTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2115">
-          <caret line="153" column="39" lean-forward="false" selection-start-line="153" selection-start-column="39" selection-end-line="153" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/RoutingTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/ServiceDiscoveryTests.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1677,7 +1564,7 @@
     <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <marker date="1506341536000" expanded="false" signature="6:204" ph="..." />
             <marker date="1506341536000" expanded="true" signature="253:2063" ph="{...}" />
@@ -1686,10 +1573,26 @@
             <marker date="1506341536000" expanded="true" signature="553:2061" ph="{...}" />
             <marker date="1506341536000" expanded="true" signature="667:2055" ph="{...}" />
             <marker date="1506341536000" expanded="true" signature="772:1227" ph="{...}" />
-            <marker date="1506341536000" expanded="true" signature="922:1213" ph="/* builder.UseJwtBearerAuthentication( ... */" />
+            <marker date="1506341536000" expanded="true" signature="889:1213" ph="/* TODO: fix me ... */" />
             <marker date="1506341536000" expanded="true" signature="1244:1917" ph="{...}" />
-            <marker date="1506341536000" expanded="true" signature="1367:1903" ph="/* builder.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions ... */" />
+            <marker date="1506341536000" expanded="true" signature="1350:1903" ph="/* TODO: fix me ... */" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build-and-release-unstable.ps1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="829">
+          <caret line="247" column="21" lean-forward="true" selection-start-line="247" selection-start-column="21" selection-end-line="247" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

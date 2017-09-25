@@ -1,6 +1,7 @@
 ﻿#tool "nuget:?package=GitVersion.CommandLine"
 #tool "nuget:?package=GitReleaseNotes"
-#addin "nuget:?package=Cake.Json"
+//#addin "nuget:?package=Cake.Json&version=1.0.2.13"
+#addin nuget:?package=Newtonsoft.Json&version=9.0.1
 #tool "nuget:?package=OpenCover"
 #tool "nuget:?package=ReportGenerator"
 #tool coveralls.net
@@ -290,6 +291,7 @@ Task("DownloadGitHubReleaseArtifacts")
         EnsureDirectoryExists(packagesDir);
 
 		var releaseUrl = tagsUrl + releaseTag;
+		/*
         var assets_url = ParseJson(GetResource(releaseUrl))
             .GetValue("assets_url")
 			.Value<string>();
@@ -300,6 +302,7 @@ Task("DownloadGitHubReleaseArtifacts")
 			Information("Downloading " + file);
             DownloadFile(asset.Value<string>("browser_download_url"), file);
         }
+		 */
     });
 
 Task("ReleasePackagesToStableFeed")

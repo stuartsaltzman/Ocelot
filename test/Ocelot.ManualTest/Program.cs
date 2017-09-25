@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -8,7 +9,7 @@ namespace Ocelot.ManualTest
     {
         public static void Main(string[] args)
         {
-            IWebHostBuilder builder = new WebHostBuilder();
+ /*           IWebHostBuilder builder = new WebHostBuilder();
             
             builder.ConfigureServices(s => {
                 s.AddSingleton(builder);
@@ -21,6 +22,14 @@ namespace Ocelot.ManualTest
             var host = builder.Build();
 
             host.Run();
+*/
+	        
+	        BuildWebHost(args).Run();
         }
+	    
+	    public static IWebHost BuildWebHost(string[] args) =>
+		    WebHost.CreateDefaultBuilder(args)
+			    .UseStartup<Startup>()
+			    .Build();
     }
 }

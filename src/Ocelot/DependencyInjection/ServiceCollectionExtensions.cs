@@ -42,6 +42,10 @@ using System.Linq;
 using System.Net.Http;
 using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
+using System.Threading.Tasks;
+using IdentityServer4.AccessTokenValidation;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Ocelot.Configuration;
 using Ocelot.Creator.Configuration;
@@ -86,15 +90,16 @@ namespace Ocelot.DependencyInjection
             services.TryAddSingleton<IRateLimitOptionsCreator, RateLimitOptionsCreator>();
 
             var identityServerConfiguration = IdentityServerConfigurationCreator.GetIdentityServerConfiguration();
-            
+	            
             if(identityServerConfiguration != null)
             {
                 services.TryAddSingleton<IIdentityServerConfiguration>(identityServerConfiguration);
                 services.TryAddSingleton<IHashMatcher, HashMatcher>();
                 var identityServerBuilder = services
-                    .AddIdentityServer(options => {
-                        options.IssuerUri = "Ocelot";
-                    })
+                    .AddIdentityServer(options =>
+	                {
+		                options.IssuerUri = "Ocelot";
+	                })
                     .AddInMemoryApiResources(new List<ApiResource>
                     {
                         new ApiResource
@@ -129,13 +134,18 @@ namespace Ocelot.DependencyInjection
 
                 if (string.IsNullOrEmpty(identityServerConfiguration.CredentialsSigningCertificateLocation) || string.IsNullOrEmpty(identityServerConfiguration.CredentialsSigningCertificatePassword))
                 {
-                    identityServerBuilder.AddTemporarySigningCredential();
+	                identityServerBuilder.AddDeveloperSigningCredential();
+                    //identityServerBuilder.AddTemporarySigningCredential();
                 }
                 else
                 {
                     var cert = new X509Certificate2(identityServerConfiguration.CredentialsSigningCertificateLocation, identityServerConfiguration.CredentialsSigningCertificatePassword);
                     identityServerBuilder.AddSigningCredential(cert);
                 }
+	            
+
+	            // SS: added here
+	            await CreateAdministrationArea(identityServerConfiguration, services);
             }
 
             var assembly = typeof(FileConfigurationController).GetTypeInfo().Assembly;
@@ -190,8 +200,80 @@ namespace Ocelot.DependencyInjection
             //Used to log the the start and ending of middleware
             services.TryAddSingleton<OcelotDiagnosticListener>();
             services.AddMiddlewareAnalysis();
-
+	        
             return services;
+        }
+	    
+	    private static async Task<IOcelotConfiguration> CreateConfiguration(
+		    IOptions<FileConfiguration> fileConfig, 
+		    IFileConfigurationSetter configSetter, 
+		    IOcelotConfigurationProvider configProvider)
+        {
+            //var fileConfig = (IOptions<FileConfiguration>)builder.ApplicationServices.GetService(typeof(IOptions<FileConfiguration>));
+            //var configSetter = (IFileConfigurationSetter)builder.ApplicationServices.GetService(typeof(IFileConfigurationSetter));
+            //var configProvider = (IOcelotConfigurationProvider)builder.ApplicationServices.GetService(typeof(IOcelotConfigurationProvider));
+
+            var ocelotConfiguration = await configProvider.Get();
+
+            if (ocelotConfiguration == null || ocelotConfiguration.Data == null || ocelotConfiguration.IsError)
+            {
+                var config = await configSetter.Set(fileConfig.Value);
+
+                if (config == null || config.IsError)
+                {
+                    throw new Exception("Unable to start Ocelot: configuration was not set up correctly.");
+                }
+            }
+
+            ocelotConfiguration = await configProvider.Get();
+
+            if(ocelotConfiguration == null || ocelotConfiguration.Data == null || ocelotConfiguration.IsError)
+            {
+                throw new Exception("Unable to start Ocelot: ocelot configuration was not returned by provider.");
+            }
+
+            return ocelotConfiguration.Data;
+        }
+
+        private static async Task CreateAdministrationArea(
+	        IIdentityServerConfiguration identityServerConfiguration, 
+	        IServiceCollection services,
+	        IOptions<FileConfiguration> fileConfig, 
+	        IFileConfigurationSetter configSetter, 
+	        IOcelotConfigurationProvider configProvider,
+	        IBaseUrlFinder urlFinder)
+        {
+            var configuration = await CreateConfiguration(fileConfig, configSetter, configProvider);
+            //var identityServerConfiguration = (IIdentityServerConfiguration)builder.ApplicationServices.GetService(typeof(IIdentityServerConfiguration));
+
+            if(!string.IsNullOrEmpty(configuration.AdministrationPath) && identityServerConfiguration != null)
+            {
+                //var urlFinder = (IBaseUrlFinder)builder.ApplicationServices.GetService(typeof(IBaseUrlFinder));
+                var baseSchemeUrlAndPort = urlFinder.Find();
+	           
+	           
+                builder.Map(configuration.AdministrationPath, app =>
+                {
+                    var identityServerUrl = $"{baseSchemeUrlAndPort}/{configuration.AdministrationPath.Remove(0,1)}";
+	                
+	                services.AddAuthentication()
+		                .AddIdentityServerAuthentication(options =>
+			                {
+				                options.Authority = identityServerUrl;
+				                options.ApiName = identityServerConfiguration.ApiName;
+				                options.RequireHttpsMetadata = identityServerConfiguration.RequireHttps;
+				                options.AllowedScopes = identityServerConfiguration.AllowedScopes;
+				                options.SupportedTokens = SupportedTokens.Both;
+				                options.ApiSecret = identityServerConfiguration.ApiSecret;
+			                }
+		                );
+	        
+	               
+                    app.UseIdentityServer();
+
+                    app.UseMvc();
+                });
+            }
         }
     }
 }

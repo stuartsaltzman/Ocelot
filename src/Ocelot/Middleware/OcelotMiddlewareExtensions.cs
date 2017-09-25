@@ -51,10 +51,10 @@ namespace Ocelot.Middleware
         /// <param name="builder"></param>
         /// <param name="middlewareConfiguration"></param>
         /// <returns></returns>
-        public static async Task<IApplicationBuilder> UseOcelot(this IApplicationBuilder builder,       OcelotMiddlewareConfiguration middlewareConfiguration)
+        public static Task<IApplicationBuilder> UseOcelot(this IApplicationBuilder builder, OcelotMiddlewareConfiguration middlewareConfiguration)
         {
-            await CreateAdministrationArea(builder);
-
+            //await CreateAdministrationArea(builder);
+	    
             ConfigureDiagnosticListener(builder);
 
             // This is registered to catch any global exceptions that are not handled
@@ -137,10 +137,10 @@ namespace Ocelot.Middleware
             //We fire off the request and set the response on the scoped data repo
             builder.UseHttpRequesterMiddleware();
 
-            return builder;
+            return Task.FromResult(builder);
         }
 
-        private static async Task<IOcelotConfiguration> CreateConfiguration(IApplicationBuilder builder)
+/*        private static async Task<IOcelotConfiguration> CreateConfiguration(IApplicationBuilder builder)
         {
             var fileConfig = (IOptions<FileConfiguration>)builder.ApplicationServices.GetService(typeof(IOptions<FileConfiguration>));
             
@@ -185,7 +185,8 @@ namespace Ocelot.Middleware
                 builder.Map(configuration.AdministrationPath, app =>
                 {
                     var identityServerUrl = $"{baseSchemeUrlAndPort}/{configuration.AdministrationPath.Remove(0,1)}";
-                    app.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions
+	                
+  					app.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions
                     {
                         Authority = identityServerUrl,
                         ApiName = identityServerConfiguration.ApiName,
@@ -195,12 +196,13 @@ namespace Ocelot.Middleware
                         ApiSecret = identityServerConfiguration.ApiSecret
                     });
 
+	               
                     app.UseIdentityServer();
 
                     app.UseMvc();
                 });
             }
-        }
+        }*/
         
         private static void UseIfNotNull(this IApplicationBuilder builder, Func<HttpContext, Func<Task>, Task> middleware)
         {

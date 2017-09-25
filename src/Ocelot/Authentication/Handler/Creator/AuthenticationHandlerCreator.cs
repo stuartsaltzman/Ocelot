@@ -1,5 +1,6 @@
 using System;
 using IdentityServer4.AccessTokenValidation;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Ocelot.Responses;
@@ -22,27 +23,29 @@ namespace Ocelot.Authentication.Handler.Creator
             if (authOptions.Provider.ToLower() == "jwt")
             {
                 var authenticationConfig = authOptions.Config as JwtConfig;
-
-                builder.UseJwtBearerAuthentication(
-                    new JwtBearerOptions()
-                        {
-                            Authority = authenticationConfig.Authority,
-                            Audience = authenticationConfig.Audience
-                        });
+            
+	            //  TODO: fix me
+                // builder.UseJwtBearerAuthentication(
+                //     new JwtBearerOptions()
+                //         {
+                //             Authority = authenticationConfig.Authority,
+                //             Audience = authenticationConfig.Audience
+                //         });
             }
             else
             {
                 var authenticationConfig = authOptions.Config as IdentityServerConfig;
+				//  TODO: fix me
 
-                builder.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions
-                {
-                    Authority = authenticationConfig.ProviderRootUrl,
-                    ApiName = authenticationConfig.ApiName,
-                    RequireHttpsMetadata = authenticationConfig.RequireHttps,
-                    AllowedScopes = authOptions.AllowedScopes,
-                    SupportedTokens = SupportedTokens.Both,
-                    ApiSecret = authenticationConfig.ApiSecret
-                });
+// 				 builder.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions
+//                {
+//                    Authority = authenticationConfig.ProviderRootUrl,
+//                    ApiName = authenticationConfig.ApiName,
+//                    RequireHttpsMetadata = authenticationConfig.RequireHttps,
+//                    AllowedScopes = authOptions.AllowedScopes,
+//                    SupportedTokens = SupportedTokens.Both,
+//                    ApiSecret = authenticationConfig.ApiSecret
+//                });
             }
 
             var authenticationNext = builder.Build();

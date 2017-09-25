@@ -160,7 +160,7 @@ namespace Ocelot.AcceptanceTests
                 })
                 .ConfigureLogging(l =>
                 {
-                    l.AddConsole(configuration.GetSection("Logging"));
+                    //l.AddConsole(configuration.GetSection("Logging"));
                     l.AddDebug();
                 })
                 .Configure(a =>

@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f9db713-33c0-4b93-8b57-95a5fa10da98" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/contentModel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.cake" afterPath="$PROJECT_DIR$/build.cake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/HashMatcher.cs" afterPath="$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/HashMatcher.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Ocelot.csproj" afterPath="$PROJECT_DIR$/src/Ocelot/Ocelot.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" afterPath="$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.Benchmarks/Ocelot.Benchmarks.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.Benchmarks/Ocelot.Benchmarks.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.IntegrationTests/Ocelot.IntegrationTests.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.IntegrationTests/Ocelot.IntegrationTests.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.UnitTests/Ocelot.UnitTests.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.UnitTests/Ocelot.UnitTests.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/packages.config" afterPath="$PROJECT_DIR$/tools/packages.config" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,58 +30,66 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
               <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashMatcher.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/HashMatcher.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
               <folding>
-                <marker date="1506871911000" expanded="true" signature="6:68" ph="..." />
-                <marker date="1506871911000" expanded="true" signature="115:629" ph="{...}" />
-                <marker date="1506871911000" expanded="true" signature="161:627" ph="{...}" />
-                <marker date="1506871911000" expanded="true" signature="236:621" ph="{...}" />
+                <marker date="1504724147000" expanded="false" signature="6:159" ph="..." />
+                <marker date="1504724147000" expanded="true" signature="208:1244" ph="{...}" />
+                <marker date="1504724147000" expanded="true" signature="360:1242" ph="{...}" />
+                <marker date="1504724147000" expanded="true" signature="515:567" ph="{...}" />
+                <marker date="1504724147000" expanded="true" signature="679:1236" ph="{...}" />
+                <marker date="1504724147000" expanded="true" signature="785:987" ph="{...}" />
+                <marker date="1504724147000" expanded="true" signature="1077:1224" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceCollectionExtensions.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ServiceCollectionExtensions.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="251" column="14" lean-forward="false" selection-start-line="251" selection-start-column="14" selection-end-line="251" selection-end-column="14" />
+            <state relative-caret-position="718">
+              <caret line="265" column="34" lean-forward="false" selection-start-line="265" selection-start-column="34" selection-end-line="265" selection-end-column="34" />
               <folding>
-                <marker date="1506868021000" expanded="false" signature="6:1816" ph="..." />
-                <marker date="1506868021000" expanded="true" signature="1854:15363" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="1908:15361" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="2067:2300" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="2472:11863" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="4879:7937" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="5168:5254" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="5343:6202" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="5409:6180" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="5921:6154" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="5998:6124" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="6281:7023" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="6342:7001" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="7292:7477" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="7498:7791" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="7820:7923" ph="/* SS: added here ... */" />
-                <marker date="1506868021000" expanded="true" signature="11199:11427" ph="/* see this for why we register this as singleton http://stackoverflow.com/questions/37371264/invalidoperationexc ... */" />
-                <marker date="1506868021000" expanded="true" signature="12087:13362" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="12110:12510" ph="/* var fileConfig = (IOptions&lt;FileConfiguration&gt;)builder.ApplicationServices.GetService(typeof(IOptions&lt;FileConfi ... */" />
-                <marker date="1506868021000" expanded="true" signature="12690:12988" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="12830:12974" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="13163:13306" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="13755:15355" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="14134:15345" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="14418:15329" ph="{...}" />
-                <marker date="1506868021000" expanded="true" signature="14680:15183" ph="{...}" />
+                <marker date="1506872520000" expanded="false" signature="6:1816" ph="..." />
+                <marker date="1506872520000" expanded="true" signature="1854:15254" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="1908:15252" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="2067:2300" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="2472:11828" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="4866:7911" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="5155:5241" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="5330:6189" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="5396:6167" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="5908:6141" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="5985:6111" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="6268:7010" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="6329:6988" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="7279:7464" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="7485:7778" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="7794:7897" ph="/* SS: added here ... */" />
+                <marker date="1506872520000" expanded="true" signature="11173:11401" ph="/* see this for why we register this as singleton http://stackoverflow.com/questions/37371264/invalidoperationexc ... */" />
+                <marker date="1506872520000" expanded="true" signature="12045:13320" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="12068:12468" ph="/* var fileConfig = (IOptions&lt;FileConfiguration&gt;)builder.ApplicationServices.GetService(typeof(IOptions&lt;FileConfi ... */" />
+                <marker date="1506872520000" expanded="true" signature="12648:12946" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="12788:12932" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="13121:13264" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="13710:15246" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="14089:15236" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="14349:15220" ph="{...}" />
+                <marker date="1506872520000" expanded="true" signature="14594:15099" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Ocelot.Benchmarks/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <marker date="1506872118000" expanded="true" signature="59:347" ph="{...}" />
+                <marker date="1506872118000" expanded="true" signature="86:345" ph="{...}" />
+                <marker date="1506872118000" expanded="true" signature="139:339" ph="{...}" />
+                <marker date="1506872118000" expanded="true" signature="205:294" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -270,12 +272,13 @@
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7237752A-EC9B-4D4A-B3E3-9AE7881979E1/d4/28abe0ea/MapExtensions.cs" />
         <option value="$PROJECT_DIR$/src/Ocelot/Middleware/OcelotMiddlewareExtensions.cs" />
         <option value="$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs" />
-        <option value="$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/OcelotResourceOwnerPasswordValidator.cs" />
         <option value="$PROJECT_DIR$/src/Ocelot/Request/Builder/HttpRequestCreator.cs" />
         <option value="$PROJECT_DIR$/build.cake" />
         <option value="$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/HashMatcher.cs" />
+        <option value="$PROJECT_DIR$/test/Ocelot.Benchmarks/Program.cs" />
+        <option value="$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" />
       </list>
     </option>
   </component>
@@ -323,42 +326,25 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot (restoring packages...)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot (restoring packages...)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Dependencies" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot (restoring packages...)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Dependencies" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name=".NETStandard 2" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot (restoring packages...)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Configuration" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot (restoring packages...)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Configuration" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Authentication" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="DependencyInjection" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="test" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="test" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Ocelot.Benchmarks" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -523,12 +509,12 @@
       <workItem from="1506195986782" duration="236000" />
       <workItem from="1506196440831" duration="596000" />
       <workItem from="1506197103514" duration="10597000" />
-      <workItem from="1506867695192" duration="4214000" />
+      <workItem from="1506867695192" duration="4815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48236000" />
+    <option name="totallyTimeSpent" value="48837000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -582,20 +568,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/61435166-2305-4047-93B2-B8C3672AFA74/92/bb5de9f4/JwtBearerOptions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ocelot/Logging/OcelotDiagnosticListener.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/AuthorisationTests.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3720">
@@ -1027,45 +999,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Factory/AuthenticationHandlerFactory.cs">
+    <entry file="file://$PROJECT_DIR$/test/Ocelot.Benchmarks/UrlPathToUrlPathTemplateMatcherBenchmarks.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="251" column="14" lean-forward="false" selection-start-line="251" selection-start-column="14" selection-end-line="251" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1506868021000" expanded="false" signature="6:1816" ph="..." />
-            <marker date="1506868021000" expanded="true" signature="1854:15363" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="1908:15361" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="2067:2300" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="2472:11863" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="4879:7937" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="5168:5254" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="5343:6202" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="5409:6180" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="5921:6154" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="5998:6124" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="6281:7023" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="6342:7001" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="7292:7477" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="7498:7791" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="7820:7923" ph="/* SS: added here ... */" />
-            <marker date="1506868021000" expanded="true" signature="11199:11427" ph="/* see this for why we register this as singleton http://stackoverflow.com/questions/37371264/invalidoperationexc ... */" />
-            <marker date="1506868021000" expanded="true" signature="12087:13362" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="12110:12510" ph="/* var fileConfig = (IOptions&lt;FileConfiguration&gt;)builder.ApplicationServices.GetService(typeof(IOptions&lt;FileConfi ... */" />
-            <marker date="1506868021000" expanded="true" signature="12690:12988" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="12830:12974" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="13163:13306" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="13755:15355" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="14134:15345" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="14418:15329" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="14680:15183" ph="{...}" />
+            <marker date="1504283600000" expanded="false" signature="6:142" ph="..." />
+            <marker date="1504283600000" expanded="true" signature="171:1198" ph="{...}" />
+            <marker date="1504283600000" expanded="true" signature="311:1196" ph="{...}" />
+            <marker date="1504283600000" expanded="true" signature="520:588" ph="{...}" />
+            <marker date="1504283600000" expanded="true" signature="633:876" ph="{...}" />
+            <marker date="1504283600000" expanded="true" signature="930:1033" ph="{...}" />
+            <marker date="1504283600000" expanded="true" signature="1087:1190" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1079,6 +1024,70 @@
             <marker date="1506871911000" expanded="true" signature="115:629" ph="{...}" />
             <marker date="1506871911000" expanded="true" signature="161:627" ph="{...}" />
             <marker date="1506871911000" expanded="true" signature="236:621" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Factory/AuthenticationHandlerFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <marker date="1504724147000" expanded="false" signature="6:159" ph="..." />
+            <marker date="1504724147000" expanded="true" signature="208:1244" ph="{...}" />
+            <marker date="1504724147000" expanded="true" signature="360:1242" ph="{...}" />
+            <marker date="1504724147000" expanded="true" signature="515:567" ph="{...}" />
+            <marker date="1504724147000" expanded="true" signature="679:1236" ph="{...}" />
+            <marker date="1504724147000" expanded="true" signature="785:987" ph="{...}" />
+            <marker date="1504724147000" expanded="true" signature="1077:1224" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Ocelot.Benchmarks/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1506872118000" expanded="true" signature="59:347" ph="{...}" />
+            <marker date="1506872118000" expanded="true" signature="86:345" ph="{...}" />
+            <marker date="1506872118000" expanded="true" signature="139:339" ph="{...}" />
+            <marker date="1506872118000" expanded="true" signature="205:294" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="265" column="34" lean-forward="false" selection-start-line="265" selection-start-column="34" selection-end-line="265" selection-end-column="34" />
+          <folding>
+            <marker date="1506872520000" expanded="false" signature="6:1816" ph="..." />
+            <marker date="1506872520000" expanded="true" signature="1854:15254" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="1908:15252" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="2067:2300" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="2472:11828" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="4866:7911" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="5155:5241" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="5330:6189" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="5396:6167" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="5908:6141" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="5985:6111" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="6268:7010" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="6329:6988" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="7279:7464" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="7485:7778" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="7794:7897" ph="/* SS: added here ... */" />
+            <marker date="1506872520000" expanded="true" signature="11173:11401" ph="/* see this for why we register this as singleton http://stackoverflow.com/questions/37371264/invalidoperationexc ... */" />
+            <marker date="1506872520000" expanded="true" signature="12045:13320" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="12068:12468" ph="/* var fileConfig = (IOptions&lt;FileConfiguration&gt;)builder.ApplicationServices.GetService(typeof(IOptions&lt;FileConfi ... */" />
+            <marker date="1506872520000" expanded="true" signature="12648:12946" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="12788:12932" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="13121:13264" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="13710:15246" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="14089:15236" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="14349:15220" ph="{...}" />
+            <marker date="1506872520000" expanded="true" signature="14594:15099" ph="{...}" />
           </folding>
         </state>
       </provider>

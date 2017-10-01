@@ -90,7 +90,7 @@ namespace Ocelot.DependencyInjection
             services.TryAddSingleton<IRateLimitOptionsCreator, RateLimitOptionsCreator>();
 
             var identityServerConfiguration = IdentityServerConfigurationCreator.GetIdentityServerConfiguration();
-	            
+
             if(identityServerConfiguration != null)
             {
                 services.TryAddSingleton<IIdentityServerConfiguration>(identityServerConfiguration);
@@ -142,7 +142,7 @@ namespace Ocelot.DependencyInjection
                     var cert = new X509Certificate2(identityServerConfiguration.CredentialsSigningCertificateLocation, identityServerConfiguration.CredentialsSigningCertificatePassword);
                     identityServerBuilder.AddSigningCredential(cert);
                 }
-	            
+
 
 	            // SS: added here
 	            //await CreateAdministrationArea(identityServerConfiguration, services);
@@ -200,13 +200,13 @@ namespace Ocelot.DependencyInjection
             //Used to log the the start and ending of middleware
             services.TryAddSingleton<OcelotDiagnosticListener>();
             services.AddMiddlewareAnalysis();
-	        
+
             return services;
         }
-	    
+
 	    private static async Task<IOcelotConfiguration> CreateConfiguration(
-		    IOptions<FileConfiguration> fileConfig, 
-		    IFileConfigurationSetter configSetter, 
+		    IOptions<FileConfiguration> fileConfig,
+		    IFileConfigurationSetter configSetter,
 		    IOcelotConfigurationProvider configProvider)
         {
             //var fileConfig = (IOptions<FileConfiguration>)builder.ApplicationServices.GetService(typeof(IOptions<FileConfiguration>));
@@ -237,10 +237,10 @@ namespace Ocelot.DependencyInjection
 
         private static async Task CreateAdministrationArea(
 	        IApplicationBuilder builder,
-	        IIdentityServerConfiguration identityServerConfiguration, 
+	        IIdentityServerConfiguration identityServerConfiguration,
 	        IServiceCollection services,
-	        IOptions<FileConfiguration> fileConfig, 
-	        IFileConfigurationSetter configSetter, 
+	        IOptions<FileConfiguration> fileConfig,
+	        IFileConfigurationSetter configSetter,
 	        IOcelotConfigurationProvider configProvider,
 	        IBaseUrlFinder urlFinder)
         {
@@ -251,25 +251,25 @@ namespace Ocelot.DependencyInjection
             {
                 //var urlFinder = (IBaseUrlFinder)builder.ApplicationServices.GetService(typeof(IBaseUrlFinder));
                 var baseSchemeUrlAndPort = urlFinder.Find();
-	           
-	           
+
+
                 builder.Map(configuration.AdministrationPath, app =>
                 {
                     var identityServerUrl = $"{baseSchemeUrlAndPort}/{configuration.AdministrationPath.Remove(0,1)}";
-	                
+
 	                services.AddAuthentication()
 		                .AddIdentityServerAuthentication(options =>
 			                {
 				                options.Authority = identityServerUrl;
 				                options.ApiName = identityServerConfiguration.ApiName;
 				                options.RequireHttpsMetadata = identityServerConfiguration.RequireHttps;
-				                options.AllowedScopes = identityServerConfiguration.AllowedScopes;
+				                //options.AllowedScopes = identityServerConfiguration.AllowedScopes;
 				                options.SupportedTokens = SupportedTokens.Both;
 				                options.ApiSecret = identityServerConfiguration.ApiSecret;
 			                }
 		                );
-	        
-	               
+
+
                     app.UseIdentityServer();
 
                     app.UseMvc();

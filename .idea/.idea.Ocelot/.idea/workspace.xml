@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f9db713-33c0-4b93-8b57-95a5fa10da98" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/contentModel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/OcelotResourceOwnerPasswordValidator.cs" afterPath="$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/OcelotResourceOwnerPasswordValidator.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" afterPath="$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Request/Builder/HttpRequestCreator.cs" afterPath="$PROJECT_DIR$/src/Ocelot/Request/Builder/HttpRequestCreator.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.cake" afterPath="$PROJECT_DIR$/build.cake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/HashMatcher.cs" afterPath="$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/HashMatcher.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Ocelot.csproj" afterPath="$PROJECT_DIR$/src/Ocelot/Ocelot.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.Benchmarks/Ocelot.Benchmarks.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.Benchmarks/Ocelot.Benchmarks.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.IntegrationTests/Ocelot.IntegrationTests.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.IntegrationTests/Ocelot.IntegrationTests.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.UnitTests/Ocelot.UnitTests.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.UnitTests/Ocelot.UnitTests.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/packages.config" afterPath="$PROJECT_DIR$/tools/packages.config" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,86 +24,34 @@
       <file leaf-file-name="AuthenticationHandlerCreator.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-              <folding>
-                <marker date="1506867648000" expanded="false" signature="6:204" ph="..." />
-                <marker date="1506867648000" expanded="true" signature="253:2063" ph="{...}" />
-                <marker date="1506867648000" expanded="false" signature="266:359" ph="..." />
-                <marker date="1506867648000" expanded="true" signature="365:475" ph="/// Cannot unit test things in this class due to use of extension methods ... " />
-                <marker date="1506867648000" expanded="true" signature="553:2061" ph="{...}" />
-                <marker date="1506867648000" expanded="true" signature="667:2055" ph="{...}" />
-                <marker date="1506867648000" expanded="true" signature="772:1227" ph="{...}" />
-                <marker date="1506867648000" expanded="true" signature="889:1213" ph="/* TODO: fix me ... */" />
-                <marker date="1506867648000" expanded="true" signature="1244:1917" ph="{...}" />
-                <marker date="1506867648000" expanded="true" signature="1350:1903" ph="/* TODO: fix me ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build-and-release-unstable.ps1" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build-and-release-unstable.ps1">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="16" column="77" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="AuthenticationHandlerFactory.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Factory/AuthenticationHandlerFactory.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="465">
+              <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OcelotResourceOwnerPasswordValidator.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/OcelotResourceOwnerPasswordValidator.cs">
+      <file leaf-file-name="HashMatcher.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/HashMatcher.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="49" column="38" lean-forward="false" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+            <state relative-caret-position="15">
+              <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
               <folding>
-                <marker date="1506868337000" expanded="false" signature="6:163" ph="..." />
-                <marker date="1506868337000" expanded="true" signature="210:1864" ph="{...}" />
-                <marker date="1506868337000" expanded="true" signature="300:1862" ph="{...}" />
-                <marker date="1506868337000" expanded="true" signature="571:695" ph="{...}" />
-                <marker date="1506868337000" expanded="true" signature="778:1856" ph="{...}" />
-                <marker date="1506868337000" expanded="true" signature="804:1711" ph="{...}" />
-                <marker date="1506868337000" expanded="true" signature="967:1186" ph="{...}" />
-                <marker date="1506868337000" expanded="true" signature="1266:1465" ph="{...}" />
-                <marker date="1506868337000" expanded="true" signature="1486:1697" ph="{...}" />
-                <marker date="1506868337000" expanded="true" signature="1743:1810" ph="{...}" />
+                <marker date="1506871911000" expanded="true" signature="6:68" ph="..." />
+                <marker date="1506871911000" expanded="true" signature="115:629" ph="{...}" />
+                <marker date="1506871911000" expanded="true" signature="161:627" ph="{...}" />
+                <marker date="1506871911000" expanded="true" signature="236:621" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpRequestCreator.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Ocelot/Request/Builder/HttpRequestCreator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-              <folding>
-                <marker date="1506868473000" expanded="true" signature="6:104" ph="..." />
-                <marker date="1506868473000" expanded="true" signature="138:527" ph="{...}" />
-                <marker date="1506868473000" expanded="true" signature="201:525" ph="{...}" />
-                <marker date="1506868473000" expanded="true" signature="366:519" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IResourceOwnerPasswordValidator.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E6EAE96-E709-4B5F-8321-0C8CB43BED26/36/7c88713d/IResourceOwnerPasswordValidator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -106,14 +59,14 @@
       <file leaf-file-name="ServiceCollectionExtensions.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="239" column="70" lean-forward="false" selection-start-line="239" selection-start-column="70" selection-end-line="239" selection-end-column="70" />
+            <state relative-caret-position="436">
+              <caret line="251" column="14" lean-forward="false" selection-start-line="251" selection-start-column="14" selection-end-line="251" selection-end-column="14" />
               <folding>
                 <marker date="1506868021000" expanded="false" signature="6:1816" ph="..." />
                 <marker date="1506868021000" expanded="true" signature="1854:15363" ph="{...}" />
                 <marker date="1506868021000" expanded="true" signature="1908:15361" ph="{...}" />
-                <marker date="1506868021000" expanded="false" signature="2067:2300" ph="{...}" />
-                <marker date="1506868021000" expanded="false" signature="2472:11863" ph="{...}" />
+                <marker date="1506868021000" expanded="true" signature="2067:2300" ph="{...}" />
+                <marker date="1506868021000" expanded="true" signature="2472:11863" ph="{...}" />
                 <marker date="1506868021000" expanded="true" signature="4879:7937" ph="{...}" />
                 <marker date="1506868021000" expanded="true" signature="5168:5254" ph="{...}" />
                 <marker date="1506868021000" expanded="true" signature="5343:6202" ph="{...}" />
@@ -126,7 +79,7 @@
                 <marker date="1506868021000" expanded="true" signature="7498:7791" ph="{...}" />
                 <marker date="1506868021000" expanded="true" signature="7820:7923" ph="/* SS: added here ... */" />
                 <marker date="1506868021000" expanded="true" signature="11199:11427" ph="/* see this for why we register this as singleton http://stackoverflow.com/questions/37371264/invalidoperationexc ... */" />
-                <marker date="1506868021000" expanded="false" signature="12087:13362" ph="{...}" />
+                <marker date="1506868021000" expanded="true" signature="12087:13362" ph="{...}" />
                 <marker date="1506868021000" expanded="true" signature="12110:12510" ph="/* var fileConfig = (IOptions&lt;FileConfiguration&gt;)builder.ApplicationServices.GetService(typeof(IOptions&lt;FileConfi ... */" />
                 <marker date="1506868021000" expanded="true" signature="12690:12988" ph="{...}" />
                 <marker date="1506868021000" expanded="true" signature="12830:12974" ph="{...}" />
@@ -140,105 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthenticationMiddleware.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Middleware/AuthenticationMiddleware.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="78" column="28" lean-forward="false" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
-              <folding>
-                <marker date="1504724147000" expanded="false" signature="6:354" ph="..." />
-                <marker date="1504724147000" expanded="true" signature="398:3192" ph="{...}" />
-                <marker date="1504724147000" expanded="true" signature="461:3190" ph="{...}" />
-                <marker date="1504724147000" expanded="true" signature="1018:1220" ph="{...}" />
-                <marker date="1504724147000" expanded="true" signature="1275:3053" ph="{...}" />
-                <marker date="1504724147000" expanded="true" signature="1348:2862" ph="{...}" />
-                <marker date="1504724147000" expanded="true" signature="1678:1964" ph="{...}" />
-                <marker date="1504724147000" expanded="true" signature="2100:2284" ph="{...}" />
-                <marker date="1504724147000" expanded="true" signature="2305:2848" ph="{...}" />
-                <marker date="1504724147000" expanded="true" signature="2392:2604" ph="{...}" />
-                <marker date="1504724147000" expanded="true" signature="2879:3043" ph="{...}" />
-                <marker date="1504724147000" expanded="true" signature="3120:3184" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="appsettings.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/Ocelot.ManualTest/appsettings.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <marker date="1506265639000" expanded="true" signature="15:161" ph="{...}" />
-                <marker date="1506265639000" expanded="true" signature="60:157" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configuration.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/Ocelot.ManualTest/configuration.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-              <folding>
-                <marker date="1505657998000" expanded="true" signature="22:1591" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="278:393" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="426:750" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="583:742" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="781:991" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="1021:1231" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="1262:1472" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="1506:1548" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="1597:1981" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="1860:1975" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="1987:2387" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="2266:2381" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="2393:2811" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="2690:2805" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="2817:3205" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="3084:3199" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="3211:3594" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="3473:3588" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="3600:4000" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="3879:3994" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="4006:4408" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="4287:4402" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="4414:4817" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="4696:4811" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="4823:5263" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="5094:5209" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="5269:5596" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="5602:6007" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="5886:6001" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="6013:6489" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="6320:6435" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="6495:6974" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="6805:6920" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="6980:7435" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="7266:7381" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="7441:7922" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="7753:7868" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="7928:8384" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="8215:8330" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="8390:8871" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="8702:8817" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="8877:9361" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="9192:9307" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="9367:9798" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="9629:9744" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="9804:10029" ph="{...}" />
-                <marker date="1505657998000" expanded="true" signature="10061:10136" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Client has NOT been authenticated for</find>
       <find>CollectionBehavior</find>
       <find>DisableTestParallelization</find>
       <find>global</find>
@@ -266,72 +124,37 @@
       <find>IBaseUrlFinder</find>
       <find>AuthenticationHandlerCreator</find>
       <find>auth</find>
-      <find>CreateAdministrationArea</find>
       <find>vscode</find>
+      <find>CreateAdministrationArea</find>
+      <find>IAuthenticationHandlerCreator</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02B9092-E3D7-447C-8DBC-C3138C20EC46/4b/95939201/IdentityServerAuthenticationOptions.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/File/FileReRoute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C162D026-09B8-40FF-998A-5D8434D894BF/18/7dc53005/ThrowHelper.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02B9092-E3D7-447C-8DBC-C3138C20EC46/c2/59c768f0/IdentityServerAuthenticationExtensions.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Logging/OcelotDiagnosticListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E6EAE96-E709-4B5F-8321-0C8CB43BED26/49/6365b663/IdentityServerApplicationBuilderExtensions.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C162D026-09B8-40FF-998A-5D8434D894BF/2b/de47686d/Task.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7237752A-EC9B-4D4A-B3E3-9AE7881979E1/d4/28abe0ea/MapExtensions.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.UnitTests/Request/Mapper/RequestMapperTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E6EAE96-E709-4B5F-8321-0C8CB43BED26/f5/2fc558c7/IdentityServerBuilderExtensionsCrypto.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Request/Builder/HttpRequestCreator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/AdministrationTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AD857A18-8503-4E73-815A-D25F75447A99/cd/2b41105e/AuthenticationOptions.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02B9092-E3D7-447C-8DBC-C3138C20EC46/36/5b706f04/IdentityServerAuthenticationDefaults.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/ThreadSafeHeadersTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/configuration.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/BearerToken.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.ManualTest/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.ManualTest/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Creator/IdentityServerConfigurationCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.ManualTest/configuration.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E663550F-2491-4724-8D73-DE7E821BDA88/7e/d26f359a/TestServer.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.ManualTest/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.ManualTest/web.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.UnitTests/Authorization/ClaimsAuthoriserTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/61435166-2305-4047-93B2-B8C3672AFA74/67/0c5fe831/JwtBearerAppBuilderExtensions.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.UnitTests/Configuration/InMemoryConfigurationRepositoryTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/61435166-2305-4047-93B2-B8C3672AFA74/92/bb5de9f4/JwtBearerOptions.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Provider/IdentityServerConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/RequestId/Middleware/RequestIdMiddlewareExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.UnitTests/Configuration/FileConfigurationCreatorTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/RequestId/Middleware/RequestIdMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Responder/Middleware/ResponderMiddlewareExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Repository/IOcelotConfigurationRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Responder/Middleware/ResponderMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/.config/NuGet/NuGet.Config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Repository/InMemoryOcelotConfigurationRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/OcelotResourceOwnerPasswordValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7D97C854-0C5D-410D-B538-BBF8A2816F3B/27/252cb736/BDDfyExtensions.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Middleware/OcelotMiddlewareConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Middleware/UnauthenticatedError.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/AuthenticationHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Middleware/OcelotMiddlewareExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/tools/packages.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/IAuthenticationHandlerCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E6EAE96-E709-4B5F-8321-0C8CB43BED26/36/7c88713d/IResourceOwnerPasswordValidator.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Factory/AuthenticationHandlerFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.Benchmarks/UrlPathToUrlPathTemplateMatcherBenchmarks.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/test/Ocelot.Benchmarks/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Middleware/AuthenticationMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Middleware/AuthenticationMiddlewareMiddlewareExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC9516A8-AE48-4AAA-9BC6-1D699F70DADC/b1/18f5d466/TestServer.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/appsettings.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Infrastructure/Claims/Parser/ClaimsParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/ClaimsToQueryStringForwardingTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/TestConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E6EAE96-E709-4B5F-8321-0C8CB43BED26/6e/e9f20110/IdentityServerServiceCollectionExtensions.cs" root0="SKIP_INSPECTION" />
@@ -348,13 +171,10 @@
     <setting file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/RoutingTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C162D026-09B8-40FF-998A-5D8434D894BF/97/d72c2a4f/Task`1.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/BearerToken.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18226A5A-AA0F-4698-AC30-F3513FEE8F7C/2f/96ea46f5/SR.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E6EAE96-E709-4B5F-8321-0C8CB43BED26/b3/af3d25ed/AuthenticationOptions.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/ClaimsToHeadersForwardingTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/ClientRateLimitTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Cache/Middleware/OutputCacheMiddlewareExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Ocelot/Cache/Middleware/OutputCacheMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/configuration.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18226A5A-AA0F-4698-AC30-F3513FEE8F7C/4f/aa64a19b/HttpClient.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/Steps.cs" root0="FORCE_HIGHLIGHTING" />
@@ -364,11 +184,52 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/273D78BF-D16F-48F2-A78D-4EFA7E4E69F1/19/31a2380b/FactAttribute.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AE06725F-8541-40D1-9979-13239744E108/b2/38defa11/AuthenticationMiddleware.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/IOcelotConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7D97C854-0C5D-410D-B538-BBF8A2816F3B/66/3810f14b/FluentStepScannerExtensions.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/OcelotConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AE06725F-8541-40D1-9979-13239744E108/a8/ea9793e2/AuthenticationServiceCollectionExtensions.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/ocelot.postman_collection.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E6EAE96-E709-4B5F-8321-0C8CB43BED26/03/4f2c82c3/CorsMiddlewareExtensions.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02B9092-E3D7-447C-8DBC-C3138C20EC46/4b/95939201/IdentityServerAuthenticationOptions.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/File/FileReRoute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C162D026-09B8-40FF-998A-5D8434D894BF/18/7dc53005/ThrowHelper.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02B9092-E3D7-447C-8DBC-C3138C20EC46/c2/59c768f0/IdentityServerAuthenticationExtensions.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C162D026-09B8-40FF-998A-5D8434D894BF/2b/de47686d/Task.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7237752A-EC9B-4D4A-B3E3-9AE7881979E1/d4/28abe0ea/MapExtensions.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.UnitTests/Request/Mapper/RequestMapperTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.AcceptanceTests/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/AdministrationTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AD857A18-8503-4E73-815A-D25F75447A99/cd/2b41105e/AuthenticationOptions.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02B9092-E3D7-447C-8DBC-C3138C20EC46/36/5b706f04/IdentityServerAuthenticationDefaults.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/ThreadSafeHeadersTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/configuration.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/BearerToken.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Creator/IdentityServerConfigurationCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E663550F-2491-4724-8D73-DE7E821BDA88/7e/d26f359a/TestServer.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.UnitTests/Authorization/ClaimsAuthoriserTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.UnitTests/Configuration/InMemoryConfigurationRepositoryTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Provider/IdentityServerConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.UnitTests/Configuration/FileConfigurationCreatorTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Repository/IOcelotConfigurationRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.UnitTests/Authentication/AuthenticationHandlerFactoryTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Repository/InMemoryOcelotConfigurationRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/HashMatcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/OcelotResourceOwnerPasswordValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/AuthenticationHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tools/packages.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/IAuthenticationHandlerCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Factory/AuthenticationHandlerFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.Benchmarks/UrlPathToUrlPathTemplateMatcherBenchmarks.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/Ocelot.Benchmarks/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Middleware/AuthenticationMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Middleware/AuthenticationMiddlewareMiddlewareExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DC9516A8-AE48-4AAA-9BC6-1D699F70DADC/b1/18f5d466/TestServer.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Infrastructure/Claims/Parser/ClaimsParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Cache/Middleware/OutputCacheMiddlewareExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Cache/Middleware/OutputCacheMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7D97C854-0C5D-410D-B538-BBF8A2816F3B/66/3810f14b/FluentStepScannerExtensions.cs" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -383,7 +244,6 @@
         <option value="$PROJECT_DIR$/test/Ocelot.ManualTest/Utilities.cs" />
         <option value="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/ConfigurationInConsulTests.cs" />
         <option value="$PROJECT_DIR$/src/Ocelot/Configuration/Creator/IdentityServerConfigurationCreator.cs" />
-        <option value="$PROJECT_DIR$/build.cake" />
         <option value="$PROJECT_DIR$/test/Ocelot.IntegrationTests/Properties/AssemblyInfo.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C162D026-09B8-40FF-998A-5D8434D894BF/97/d72c2a4f/Task`1.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18226A5A-AA0F-4698-AC30-F3513FEE8F7C/4f/aa64a19b/HttpClient.cs" />
@@ -414,6 +274,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/OcelotResourceOwnerPasswordValidator.cs" />
         <option value="$PROJECT_DIR$/src/Ocelot/Request/Builder/HttpRequestCreator.cs" />
+        <option value="$PROJECT_DIR$/build.cake" />
+        <option value="$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/HashMatcher.cs" />
       </list>
     </option>
   </component>
@@ -424,8 +286,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="y" value="42" />
+    <option name="x" value="7" />
+    <option name="y" value="31" />
     <option name="width" value="1896" />
     <option name="height" value="1058" />
   </component>
@@ -461,22 +323,42 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Ocelot (restoring packages...)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Request" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Ocelot (restoring packages...)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Dependencies" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Request" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Builder" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Ocelot (restoring packages...)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Dependencies" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name=".NETStandard 2" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Ocelot (restoring packages...)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Configuration" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Ocelot (restoring packages...)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Configuration" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Authentication" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="test" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -641,12 +523,12 @@
       <workItem from="1506195986782" duration="236000" />
       <workItem from="1506196440831" duration="596000" />
       <workItem from="1506197103514" duration="10597000" />
-      <workItem from="1506867695192" duration="777000" />
+      <workItem from="1506867695192" duration="4214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44799000" />
+    <option name="totallyTimeSpent" value="48236000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -658,7 +540,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="42" width="1896" height="1058" extended-state="0" />
+    <frame x="7" y="31" width="1896" height="1058" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -668,9 +550,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29257247" sideWeight="0.49479845" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38227147" sideWeight="0.48523206" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18459916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38133875" sideWeight="0.48523206" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27742615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39919758" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -680,7 +563,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -700,20 +582,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E6EAE96-E709-4B5F-8321-0C8CB43BED26/f5/2fc558c7/IdentityServerBuilderExtensionsCrypto.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="123" lean-forward="false" selection-start-line="61" selection-start-column="113" selection-end-line="61" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/61435166-2305-4047-93B2-B8C3672AFA74/67/0c5fe831/JwtBearerAppBuilderExtensions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="106" lean-forward="false" selection-start-line="34" selection-start-column="106" selection-end-line="34" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/61435166-2305-4047-93B2-B8C3672AFA74/92/bb5de9f4/JwtBearerOptions.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -959,22 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Factory/AuthenticationHandlerFactory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <marker date="1504724147000" expanded="false" signature="6:159" ph="..." />
-            <marker date="1504724147000" expanded="true" signature="208:1244" ph="{...}" />
-            <marker date="1504724147000" expanded="true" signature="360:1242" ph="{...}" />
-            <marker date="1504724147000" expanded="true" signature="515:567" ph="{...}" />
-            <marker date="1504724147000" expanded="true" signature="679:1236" ph="{...}" />
-            <marker date="1504724147000" expanded="true" signature="785:987" ph="{...}" />
-            <marker date="1504724147000" expanded="true" signature="1077:1224" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/AuthenticationHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1111,45 +963,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="239" column="70" lean-forward="false" selection-start-line="239" selection-start-column="70" selection-end-line="239" selection-end-column="70" />
-          <folding>
-            <marker date="1506868021000" expanded="false" signature="6:1816" ph="..." />
-            <marker date="1506868021000" expanded="true" signature="1854:15363" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="1908:15361" ph="{...}" />
-            <marker date="1506868021000" expanded="false" signature="2067:2300" ph="{...}" />
-            <marker date="1506868021000" expanded="false" signature="2472:11863" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="4879:7937" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="5168:5254" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="5343:6202" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="5409:6180" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="5921:6154" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="5998:6124" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="6281:7023" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="6342:7001" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="7292:7477" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="7498:7791" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="7820:7923" ph="/* SS: added here ... */" />
-            <marker date="1506868021000" expanded="true" signature="11199:11427" ph="/* see this for why we register this as singleton http://stackoverflow.com/questions/37371264/invalidoperationexc ... */" />
-            <marker date="1506868021000" expanded="false" signature="12087:13362" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="12110:12510" ph="/* var fileConfig = (IOptions&lt;FileConfiguration&gt;)builder.ApplicationServices.GetService(typeof(IOptions&lt;FileConfi ... */" />
-            <marker date="1506868021000" expanded="true" signature="12690:12988" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="12830:12974" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="13163:13306" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="13755:15355" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="14134:15345" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="14418:15329" ph="{...}" />
-            <marker date="1506868021000" expanded="true" signature="14680:15183" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1181,34 +998,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding>
-            <marker date="1506867648000" expanded="false" signature="6:204" ph="..." />
-            <marker date="1506867648000" expanded="true" signature="253:2063" ph="{...}" />
-            <marker date="1506867648000" expanded="false" signature="266:359" ph="..." />
-            <marker date="1506867648000" expanded="true" signature="365:475" ph="/// Cannot unit test things in this class due to use of extension methods ... " />
-            <marker date="1506867648000" expanded="true" signature="553:2061" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="667:2055" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="772:1227" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="889:1213" ph="/* TODO: fix me ... */" />
-            <marker date="1506867648000" expanded="true" signature="1244:1917" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="1350:1903" ph="/* TODO: fix me ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ocelot/Request/Builder/HttpRequestCreator.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
             <marker date="1506868473000" expanded="true" signature="6:104" ph="..." />
             <marker date="1506868473000" expanded="true" signature="138:527" ph="{...}" />
             <marker date="1506868473000" expanded="true" signature="201:525" ph="{...}" />
             <marker date="1506868473000" expanded="true" signature="366:519" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.cake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="77" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Factory/AuthenticationHandlerFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="251" column="14" lean-forward="false" selection-start-line="251" selection-start-column="14" selection-end-line="251" selection-end-column="14" />
+          <folding>
+            <marker date="1506868021000" expanded="false" signature="6:1816" ph="..." />
+            <marker date="1506868021000" expanded="true" signature="1854:15363" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="1908:15361" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="2067:2300" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="2472:11863" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="4879:7937" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="5168:5254" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="5343:6202" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="5409:6180" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="5921:6154" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="5998:6124" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="6281:7023" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="6342:7001" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="7292:7477" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="7498:7791" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="7820:7923" ph="/* SS: added here ... */" />
+            <marker date="1506868021000" expanded="true" signature="11199:11427" ph="/* see this for why we register this as singleton http://stackoverflow.com/questions/37371264/invalidoperationexc ... */" />
+            <marker date="1506868021000" expanded="true" signature="12087:13362" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="12110:12510" ph="/* var fileConfig = (IOptions&lt;FileConfiguration&gt;)builder.ApplicationServices.GetService(typeof(IOptions&lt;FileConfi ... */" />
+            <marker date="1506868021000" expanded="true" signature="12690:12988" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="12830:12974" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="13163:13306" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="13755:15355" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="14134:15345" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="14418:15329" ph="{...}" />
+            <marker date="1506868021000" expanded="true" signature="14680:15183" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ocelot/Configuration/Authentication/HashMatcher.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+          <folding>
+            <marker date="1506871911000" expanded="true" signature="6:68" ph="..." />
+            <marker date="1506871911000" expanded="true" signature="115:629" ph="{...}" />
+            <marker date="1506871911000" expanded="true" signature="161:627" ph="{...}" />
+            <marker date="1506871911000" expanded="true" signature="236:621" ph="{...}" />
           </folding>
         </state>
       </provider>

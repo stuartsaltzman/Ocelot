@@ -1,6 +1,6 @@
 ﻿#tool "nuget:?package=GitVersion.CommandLine"
 #tool "nuget:?package=GitReleaseNotes"
-//#addin "nuget:?package=Cake.Json&version=1.0.2.13"
+#addin "nuget:?package=Cake.Json" //nuget:?package=Cake.Json&version=1.0.2.13
 #addin nuget:?package=Newtonsoft.Json&version=9.0.1
 #tool "nuget:?package=OpenCover"
 #tool "nuget:?package=ReportGenerator"
@@ -291,7 +291,7 @@ Task("DownloadGitHubReleaseArtifacts")
         EnsureDirectoryExists(packagesDir);
 
 		var releaseUrl = tagsUrl + releaseTag;
-		/*
+		
         var assets_url = ParseJson(GetResource(releaseUrl))
             .GetValue("assets_url")
 			.Value<string>();
@@ -302,7 +302,7 @@ Task("DownloadGitHubReleaseArtifacts")
 			Information("Downloading " + file);
             DownloadFile(asset.Value<string>("browser_download_url"), file);
         }
-		 */
+		
     });
 
 Task("ReleasePackagesToStableFeed")
@@ -377,21 +377,24 @@ private void GenerateReleaseNotes(ConvertableFilePath file)
 /// Publishes code and symbols packages to nuget feed, based on contents of artifacts file
 private void PublishPackages(ConvertableDirectoryPath packagesDir, ConvertableFilePath artifactsFile, string feedApiKey, string codeFeedUrl, string symbolFeedUrl)
 {
-        var artifacts = System.IO.File
-            .ReadAllLines(artifactsFile)
-            .Select(l => l.Split(':'))
-            .ToDictionary(v => v[0], v => v[1]);
+	throw new NotImplementedException("PublishPackages temporarily disabled  due to Cake build error: The type 'Dictionary<,>' is defined in an assembly that is not referenced. You must add a reference to assembly 'System.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'");
+	/*
+	var artifacts = System.IO.File
+		.ReadAllLines(artifactsFile)
+		.Select(l => l.Split(':'))
+		.ToDictionary(v => v[0], v => v[1]);
 
-		var codePackage = packagesDir + File(artifacts["nuget"]);
+	var codePackage = packagesDir + File(artifacts["nuget"]);
 
-		Information("Pushing package " + codePackage);
+	Information("Pushing package " + codePackage);
 
-        NuGetPush(
-            codePackage,
-            new NuGetPushSettings {
-                ApiKey = feedApiKey,
-                Source = codeFeedUrl
-            });
+	NuGetPush(
+		codePackage,
+		new NuGetPushSettings {
+			ApiKey = feedApiKey,
+			Source = codeFeedUrl
+		});
+	*/
 }
 
 /// gets the resource from the specified url

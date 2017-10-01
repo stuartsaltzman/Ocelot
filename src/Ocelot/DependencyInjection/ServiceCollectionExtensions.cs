@@ -145,7 +145,7 @@ namespace Ocelot.DependencyInjection
 	            
 
 	            // SS: added here
-	            await CreateAdministrationArea(identityServerConfiguration, services);
+	            //await CreateAdministrationArea(identityServerConfiguration, services);
             }
 
             var assembly = typeof(FileConfigurationController).GetTypeInfo().Assembly;
@@ -236,6 +236,7 @@ namespace Ocelot.DependencyInjection
         }
 
         private static async Task CreateAdministrationArea(
+	        IApplicationBuilder builder,
 	        IIdentityServerConfiguration identityServerConfiguration, 
 	        IServiceCollection services,
 	        IOptions<FileConfiguration> fileConfig, 

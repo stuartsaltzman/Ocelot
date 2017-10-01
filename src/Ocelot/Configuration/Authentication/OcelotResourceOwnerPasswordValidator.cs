@@ -18,7 +18,7 @@ namespace Ocelot.Configuration.Authentication
             _matcher = matcher;
         }
 
-        public async Task ValidateAsync(ResourceOwnerPasswordValidationContext context)
+        public Task ValidateAsync(ResourceOwnerPasswordValidationContext context)
         {
             try
             {
@@ -47,7 +47,7 @@ namespace Ocelot.Configuration.Authentication
             {
                 Console.WriteLine(ex);
             }
-
+	        return Task.CompletedTask;
         }
     }
 }

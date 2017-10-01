@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.local/share/JetBrains/Transient/ReSharperHost/v10/SolutionCaches/_Ocelot.-366175033.00" t="ExcludeRecursive" />
     <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.0-beta2-build1317/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
     <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.0-beta2-build1317/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
     <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.3.0-beta2-build1317/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
@@ -657,6 +656,7 @@
       </e>
       <e p="version.ps1" t="Include" />
     </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2017.2/resharper-host/local/Transient/ReSharperHost/v10/SolutionCaches/_Ocelot.-366175033.00" t="ExcludeRecursive" />
   </component>
   <component name="RiderRiderContentModelStore">
     <excludedPaths />

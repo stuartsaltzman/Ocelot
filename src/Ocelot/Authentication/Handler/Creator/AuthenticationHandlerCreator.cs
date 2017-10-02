@@ -25,9 +25,11 @@ namespace Ocelot.Authentication.Handler.Creator
 	    
         public Response<RequestDelegate> Create(IApplicationBuilder app, AuthenticationOptions authenticationOptions)
         {
- 
 	        // HACK: This is a complete hack to simply test creating a new pipeline that has its own DI services registered
-	        // with its own pipeline.
+	        // with its own pipeline. However, if the IAuthenticationHandlerFactory stored/cache the for each 
+	        // downstream API authentication config then this may be the best approach since it would keep the
+	        // pipelines isolated from each other.
+	        
 	        RequestDelegate CreatePipeline(Action<IServiceCollection> servicesConfiguration)
 	        {
 		        var webHost = new WebHostBuilder().UseKestrel()
@@ -91,40 +93,6 @@ namespace Ocelot.Authentication.Handler.Creator
 	        }
 
 	        return new OkResponse<RequestDelegate>(CreatePipelineFromConfig(authenticationOptions));
-	        
-	        
-	        //var builder = app.New();
-	        
-            //if (authOptions.Provider.ToLower() == "jwt")
-            //{
-               // var authenticationConfig = authOptions.Config as JwtConfig;
-            
-	            //  FIXME: this has moved to the IServiceCollection in Identity 2.0
-                // builder.UseJwtBearerAuthentication(
-                //     new JwtBearerOptions()
-                //         {
-                //             Authority = authenticationConfig.Authority,
-                //             Audience = authenticationConfig.Audience
-                //         });
-            //}
-            //else
-            //{
-            //    var authenticationConfig = authOptions.Config as IdentityServerConfig;
-	            //  FIXME: this has moved to the IServiceCollection in Identity 2.0
-				// 				 builder.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions
-				//                {
-				//                    Authority = authenticationConfig.ProviderRootUrl,
-				//                    ApiName = authenticationConfig.ApiName,
-				//                    RequireHttpsMetadata = authenticationConfig.RequireHttps,
-				//                    AllowedScopes = authOptions.AllowedScopes,
-				//                    SupportedTokens = SupportedTokens.Both,
-				//                    ApiSecret = authenticationConfig.ApiSecret
-				//                });
-            //}
-
-            //var authenticationNext = builder.Build();
-	        
-            //return new OkResponse<RequestDelegate>(authenticationNext);
         }
     }
 }

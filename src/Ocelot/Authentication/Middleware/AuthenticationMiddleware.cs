@@ -38,6 +38,8 @@ namespace Ocelot.Authentication.Middleware
             {
                 _logger.LogDebug($"{context.Request.Path} is an authenticated route. {MiddlewareName} checking if client is authenticated");
 
+	            // IAuthenticationHandlerFactory creates a new pipeline via IApplicationBuilder.New. We should create the pipeline once
+	            // and cache it.
                 var authenticationHandler = _authHandlerFactory.Get(_app, DownstreamRoute.ReRoute.AuthenticationOptions);
 
                 if (authenticationHandler.IsError)
@@ -46,7 +48,8 @@ namespace Ocelot.Authentication.Middleware
                     SetPipelineError(authenticationHandler.Errors);
                     return;
                 }
-
+	            
+	            // HttpContext passed to the newly generated middleware pipeline
                 await authenticationHandler.Data.Handler.Handle(context);
 
 

@@ -1,24 +1,27 @@
-﻿using Ocelot.Infrastructure.RequestData;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Ocelot.Infrastructure.RequestData;
 using Ocelot.Logging;
+using Ocelot.Middleware;
 using Ocelot.Responses;
 using Ocelot.Configuration;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Ocelot.Authorisation.Middleware
 {
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
     using Errors;
-    using Microsoft.AspNetCore.Http;
-    using Ocelot.Middleware;
-
+    
     public class AuthorisationMiddleware : OcelotMiddleware
     {
         private readonly RequestDelegate _next;
+	    private readonly IApplicationBuilder _app;
         private readonly IClaimsAuthoriser _claimsAuthoriser;
         private readonly IScopesAuthoriser _scopesAuthoriser;
         private readonly IOcelotLogger _logger;
 
         public AuthorisationMiddleware(RequestDelegate next,
+	        IApplicationBuilder app,
             IRequestScopedDataRepository requestScopedDataRepository,
             IClaimsAuthoriser claimsAuthoriser,
             IScopesAuthoriser scopesAuthoriser,
@@ -26,6 +29,7 @@ namespace Ocelot.Authorisation.Middleware
             : base(requestScopedDataRepository)
         {
             _next = next;
+	        _app = app;
             _claimsAuthoriser = claimsAuthoriser;
             _scopesAuthoriser = scopesAuthoriser;
             _logger = loggerFactory.CreateLogger<AuthorisationMiddleware>();

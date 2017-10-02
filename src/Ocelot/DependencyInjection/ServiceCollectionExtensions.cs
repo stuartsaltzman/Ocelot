@@ -257,18 +257,19 @@ namespace Ocelot.DependencyInjection
                 {
                     var identityServerUrl = $"{baseSchemeUrlAndPort}/{configuration.AdministrationPath.Remove(0,1)}";
 
+
 	                services.AddAuthentication()
 		                .AddIdentityServerAuthentication(options =>
 			                {
 				                options.Authority = identityServerUrl;
 				                options.ApiName = identityServerConfiguration.ApiName;
 				                options.RequireHttpsMetadata = identityServerConfiguration.RequireHttps;
+				                // See: https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation/issues/87
 				                //options.AllowedScopes = identityServerConfiguration.AllowedScopes;
 				                options.SupportedTokens = SupportedTokens.Both;
 				                options.ApiSecret = identityServerConfiguration.ApiSecret;
 			                }
 		                );
-
 
                     app.UseIdentityServer();
 

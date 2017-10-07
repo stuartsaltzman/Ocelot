@@ -247,3 +247,4 @@ test/Ocelot.AcceptanceTests/configuration.json
 
 # Idea IntelliJ/Rider
 .idea/
+.idea/**

@@ -1,6 +1,6 @@
 ﻿#tool "nuget:?package=GitVersion.CommandLine"
 #tool "nuget:?package=GitReleaseNotes"
-#addin "nuget:?package=Cake.Json" //nuget:?package=Cake.Json&version=1.0.2.13
+#addin "nuget:?package=Cake.Json"
 #addin nuget:?package=Newtonsoft.Json&version=9.0.1
 #tool "nuget:?package=OpenCover"
 #tool "nuget:?package=ReportGenerator"

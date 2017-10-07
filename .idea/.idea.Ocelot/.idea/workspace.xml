@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4f9db713-33c0-4b93-8b57-95a5fa10da98" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs" afterPath="$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Authentication/Middleware/AuthenticationMiddleware.cs" afterPath="$PROJECT_DIR$/src/Ocelot/Authentication/Middleware/AuthenticationMiddleware.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Authorisation/Middleware/AuthorisationMiddleware.cs" afterPath="$PROJECT_DIR$/src/Ocelot/Authorisation/Middleware/AuthorisationMiddleware.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" afterPath="$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Ocelot.csproj" afterPath="$PROJECT_DIR$/src/Ocelot/Ocelot.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/Ocelot.AcceptanceTests.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.AcceptanceTests/Ocelot.AcceptanceTests.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.Benchmarks/UrlPathToUrlPathTemplateMatcherBenchmarks.cs" afterPath="$PROJECT_DIR$/test/Ocelot.Benchmarks/UrlPathToUrlPathTemplateMatcherBenchmarks.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.IntegrationTests/Ocelot.IntegrationTests.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.IntegrationTests/Ocelot.IntegrationTests.csproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Ocelot.ManualTest/Ocelot.ManualTest.csproj" afterPath="$PROJECT_DIR$/test/Ocelot.ManualTest/Ocelot.ManualTest.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.cake" afterPath="$PROJECT_DIR$/build.cake" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,39 +14,124 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AuthenticationHandlerCreator.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AuthenticationHandlerCreator.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+            <state relative-caret-position="159">
+              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
               <folding>
-                <marker date="1506947467000" expanded="false" signature="6:332" ph="..." />
-                <marker date="1506947467000" expanded="true" signature="381:5160" ph="{...}" />
-                <marker date="1506947467000" expanded="true" signature="421:531" ph="/// Cannot unit test things in this class due to use of extension methods ... " />
-                <marker date="1506947467000" expanded="true" signature="609:5158" ph="{...}" />
-                <marker date="1506947467000" expanded="true" signature="647:785" ph="{...}" />
-                <marker date="1506947467000" expanded="true" signature="909:5152" ph="{...}" />
-                <marker date="1506947467000" expanded="true" signature="931:1077" ph="/* HACK: This is a complete hack to simply test creating a new pipeline that has its own DI services registered ... */" />
-                <marker date="1506947467000" expanded="true" signature="1778:1968" ph="{...}" />
-                <marker date="1506947467000" expanded="true" signature="1843:1956" ph="{...}" />
-                <marker date="1506947467000" expanded="true" signature="2174:2635" ph="{...}" />
-                <marker date="1506947467000" expanded="true" signature="2302:2579" ph="{...}" />
-                <marker date="1506947467000" expanded="true" signature="2432:2564" ph="{...}" />
-                <marker date="1506947467000" expanded="true" signature="2650:3461" ph="{...}" />
-                <marker date="1506947467000" expanded="true" signature="2794:3401" ph="{...}" />
-                <marker date="1506947467000" expanded="true" signature="2905:3386" ph="{...}" />
-                <marker date="1506947467000" expanded="true" signature="3107:3257" ph="/* See https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation/issues/87 ... */" />
-                <marker date="1506947467000" expanded="true" signature="3601:5142" ph="/* var builder = app.New(); ... */" />
+                <marker date="1506947754000" expanded="false" signature="6:332" ph="..." />
+                <marker date="1506947754000" expanded="true" signature="381:3826" ph="{...}" />
+                <marker date="1506947754000" expanded="true" signature="421:531" ph="/// Cannot unit test things in this class due to use of extension methods ... " />
+                <marker date="1506947754000" expanded="true" signature="609:3824" ph="{...}" />
+                <marker date="1506947754000" expanded="true" signature="647:785" ph="{...}" />
+                <marker date="1506947754000" expanded="true" signature="909:3818" ph="{...}" />
+                <marker date="1506947754000" expanded="true" signature="929:1304" ph="/* HACK: This is a complete hack to simply test creating a new pipeline that has its own DI services registered ... */" />
+                <marker date="1506947754000" expanded="true" signature="2015:2205" ph="{...}" />
+                <marker date="1506947754000" expanded="true" signature="2080:2193" ph="{...}" />
+                <marker date="1506947754000" expanded="true" signature="2411:2872" ph="{...}" />
+                <marker date="1506947754000" expanded="true" signature="2539:2816" ph="{...}" />
+                <marker date="1506947754000" expanded="true" signature="2669:2801" ph="{...}" />
+                <marker date="1506947754000" expanded="true" signature="2887:3698" ph="{...}" />
+                <marker date="1506947754000" expanded="true" signature="3031:3638" ph="{...}" />
+                <marker date="1506947754000" expanded="true" signature="3142:3623" ph="{...}" />
+                <marker date="1506947754000" expanded="true" signature="3344:3494" ph="/* See https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation/issues/87 ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceCollectionExtensions.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdministrationTests.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/AdministrationTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <marker date="1505657998000" expanded="false" signature="6:373" ph="..." />
+                <marker date="1505657998000" expanded="true" signature="474:18297" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="527:18295" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="977:1205" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="1301:1884" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="1378:1554" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="1462:1540" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="1982:2703" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="2062:2243" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="2148:2228" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="2795:3604" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="2872:3048" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="2956:3034" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="3675:6034" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="3752:5516" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="3836:4174" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="4046:4155" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="4243:5502" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="4303:4862" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="4723:4840" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="4922:5484" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="5346:5462" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="6132:9306" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="6216:7307" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="6300:6378" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="6447:7293" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="6507:6859" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="6919:7275" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="7384:8505" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="7468:7546" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="7615:8491" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="7675:8034" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="8094:8473" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="9364:11386" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="9448:10861" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="9532:9610" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="9679:10847" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="9739:10252" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="10159:10230" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="10312:10829" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="10736:10807" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="11452:11954" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="11742:11815" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="12033:12234" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="12297:12504" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="12603:12904" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="12973:13184" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="13258:14784" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="14112:14774" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="14841:14984" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="15048:16194" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="15194:15644" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="16239:16682" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="16477:16549" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="16768:17557" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="17005:17081" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="17344:17420" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="17618:17696" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="17757:17838" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="17925:18012" ph="{...}" />
+                <marker date="1505657998000" expanded="true" signature="18043:18289" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IAuthenticationHandlerFactory.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Factory/IAuthenticationHandlerFactory.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="50" />
+              <folding>
+                <marker date="1504724147000" expanded="false" signature="6:59" ph="..." />
+                <marker date="1504724147000" expanded="true" signature="108:352" ph="{...}" />
+                <marker date="1504724147000" expanded="true" signature="233:350" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceCollectionExtensions.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="244" column="21" lean-forward="false" selection-start-line="244" selection-start-column="21" selection-end-line="244" selection-end-column="21" />
+            <state relative-caret-position="3075">
+              <caret line="256" column="17" lean-forward="false" selection-start-line="256" selection-start-column="17" selection-end-line="256" selection-end-column="17" />
               <folding>
                 <marker date="1506947555000" expanded="false" signature="6:1816" ph="..." />
                 <marker date="1506947555000" expanded="true" signature="1854:15364" ph="{...}" />
@@ -91,7 +168,7 @@
       <file leaf-file-name="WebHostBuilder.cs" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A766E84E-7387-4716-A71E-C7D89A3081A4/3f/1b2c3d0c/WebHostBuilder.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
+            <state relative-caret-position="570">
               <caret line="38" column="11" lean-forward="false" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
               <folding />
             </state>
@@ -151,26 +228,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthAppBuilderExtensions.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AE06725F-8541-40D1-9979-13239744E108/a8/ddbb7ae9/AuthAppBuilderExtensions.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoutingBuilderExtensions.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/907D669A-4375-4694-B943-FC6CBA339F80/6f/0fb49fcd/RoutingBuilderExtensions.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="86" lean-forward="false" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -321,6 +378,7 @@
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/IAuthenticationHandlerCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Factory/AuthenticationHandlerFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.Benchmarks/UrlPathToUrlPathTemplateMatcherBenchmarks.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Factory/IAuthenticationHandlerFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/Ocelot.Benchmarks/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Middleware/AuthenticationMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Middleware/AuthenticationMiddlewareMiddlewareExtensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -379,8 +437,8 @@
         <option value="$PROJECT_DIR$/src/Ocelot/Authorisation/Middleware/AuthorisationMiddleware.cs" />
         <option value="$PROJECT_DIR$/src/Ocelot/Authentication/Middleware/AuthenticationMiddleware.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D986D5EB-EDD9-4292-A2FA-3C4A7A05C67A/3a/5b8b44b6/IdentityServerAuthenticationExtensions.cs" />
-        <option value="$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs" />
         <option value="$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs" />
+        <option value="$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs" />
       </list>
     </option>
   </component>
@@ -391,8 +449,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1959" />
-    <option name="y" value="194" />
+    <option name="x" value="81" />
+    <option name="y" value="141" />
     <option name="width" value="1828" />
     <option name="height" value="971" />
   </component>
@@ -432,50 +490,13 @@
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Authentication" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Authentication" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Middleware" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Authorisation" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Authorisation" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Middleware" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="src" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="DependencyInjection" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="test" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="Ocelot (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="test" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Ocelot.ManualTest" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Ocelot.IntegrationTests" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -643,12 +664,13 @@
       <workItem from="1506197103514" duration="10597000" />
       <workItem from="1506867695192" duration="7413000" />
       <workItem from="1506875168895" duration="271000" />
-      <workItem from="1506875462864" duration="3927000" />
+      <workItem from="1506875462864" duration="4256000" />
+      <workItem from="1507385973671" duration="1359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55633000" />
+    <option name="totallyTimeSpent" value="57321000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,7 +682,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1959" y="194" width="1828" height="971" extended-state="0" />
+    <frame x="81" y="141" width="1828" height="971" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -671,7 +693,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29257247" sideWeight="0.49479845" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38133875" sideWeight="0.48523206" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26914662" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20185995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -702,20 +724,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/Ocelot.ManualTest/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3E6EAE96-E709-4B5F-8321-0C8CB43BED26/49/6365b663/IdentityServerApplicationBuilderExtensions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-259">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C02B9092-E3D7-447C-8DBC-C3138C20EC46/4b/95939201/IdentityServerAuthenticationOptions.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -909,29 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="88" column="36" lean-forward="false" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
-          <folding>
-            <marker date="1506867648000" expanded="false" signature="6:634" ph="..." />
-            <marker date="1506867648000" expanded="true" signature="663:9999" ph="{...}" />
-            <marker date="1506867648000" expanded="false" signature="676:1061" ph="..." />
-            <marker date="1506867648000" expanded="true" signature="1113:9997" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="1128:1292" ph="/// Registers the Ocelot default middlewares ... " />
-            <marker date="1506867648000" expanded="true" signature="1390:1513" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="1523:1810" ph="/// Registers Ocelot with a combination of default middlewares and optional middlewares in the configuration ... " />
-            <marker date="1506867648000" expanded="true" signature="1957:5784" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="3216:3392" ph="/* Now we know where the client is going to go we can authenticate them. ... */" />
-            <marker date="1506867648000" expanded="true" signature="3466:3549" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="3566:3673" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="4066:4278" ph="/* Now we have authenticated and done any claims transformation we ... */" />
-            <marker date="1506867648000" expanded="true" signature="4351:4433" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="4450:4556" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="5296:5420" ph="/* Not sure if this is the best place for this but we use the downstream url ... */" />
-            <marker date="1506867648000" expanded="true" signature="5786:8758" ph="/* private static async Task&lt;IOcelotConfiguration&gt; CreateConfiguration(IApplicationBuilder builder) ... */" />
-            <marker date="1506867648000" expanded="true" signature="8890:9015" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="8936:9005" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="9025:9218" ph="/// Configure a DiagnosticListener to listen for diagnostic events when the middleware starts and ends ... " />
-            <marker date="1506867648000" expanded="true" signature="9304:9991" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="9620:9980" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -939,27 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <marker date="1506875588000" expanded="true" signature="6:272" ph="..." />
-            <marker date="1506875588000" expanded="true" signature="315:4524" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="400:4522" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="1032:1276" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="1331:4135" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="1404:2500" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="1680:1873" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="1920:2057" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="2078:2486" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="2265:2466" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="2561:3897" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="2798:3073" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="3120:3390" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="3411:3883" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="3680:3863" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="3914:4125" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="4204:4260" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="4327:4391" ph="{...}" />
-            <marker date="1506875588000" expanded="true" signature="4455:4516" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -967,13 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <marker date="1504283600000" expanded="false" signature="6:62" ph="..." />
-            <marker date="1504283600000" expanded="true" signature="103:496" ph="{...}" />
-            <marker date="1504283600000" expanded="true" signature="156:494" ph="{...}" />
-            <marker date="1504283600000" expanded="true" signature="293:361" ph="{...}" />
-            <marker date="1504283600000" expanded="true" signature="416:488" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -981,21 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="42" column="66" lean-forward="false" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
-          <folding>
-            <marker date="1506875799000" expanded="true" signature="6:354" ph="..." />
-            <marker date="1506875799000" expanded="true" signature="398:3446" ph="{...}" />
-            <marker date="1506875799000" expanded="true" signature="461:3444" ph="{...}" />
-            <marker date="1506875799000" expanded="true" signature="1018:1220" ph="{...}" />
-            <marker date="1506875799000" expanded="true" signature="1275:3307" ph="{...}" />
-            <marker date="1506875799000" expanded="true" signature="1348:3116" ph="{...}" />
-            <marker date="1506875799000" expanded="true" signature="1518:1667" ph="/* IAuthenticationHandlerFactory creates a new pipeline via IApplicationBuilder.New. We should create the pipelin ... */" />
-            <marker date="1506875799000" expanded="true" signature="1841:2127" ph="{...}" />
-            <marker date="1506875799000" expanded="true" signature="2354:2538" ph="{...}" />
-            <marker date="1506875799000" expanded="true" signature="2559:3102" ph="{...}" />
-            <marker date="1506875799000" expanded="true" signature="2646:2858" ph="{...}" />
-            <marker date="1506875799000" expanded="true" signature="3133:3297" ph="{...}" />
-            <marker date="1506875799000" expanded="true" signature="3374:3438" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,15 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding>
-            <marker date="1504724147000" expanded="false" signature="6:159" ph="..." />
-            <marker date="1504724147000" expanded="true" signature="208:1244" ph="{...}" />
-            <marker date="1504724147000" expanded="true" signature="360:1242" ph="{...}" />
-            <marker date="1504724147000" expanded="true" signature="515:567" ph="{...}" />
-            <marker date="1504724147000" expanded="true" signature="679:1236" ph="{...}" />
-            <marker date="1504724147000" expanded="true" signature="785:987" ph="{...}" />
-            <marker date="1504724147000" expanded="true" signature="1077:1224" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1019,16 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="30" column="56" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="56" />
-          <folding>
-            <marker date="1506867648000" expanded="false" signature="6:423" ph="..." />
-            <marker date="1506867648000" expanded="true" signature="452:1700" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="479:1698" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="533:972" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="1098:1449" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="1176:1380" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="1236:1324" ph="{...}" />
-            <marker date="1506867648000" expanded="true" signature="1560:1692" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="101" lean-forward="false" selection-start-line="33" selection-start-column="101" selection-end-line="33" selection-end-column="101" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,7 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1060,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,7 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,7 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,7 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="86" lean-forward="false" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,42 +1062,16 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A766E84E-7387-4716-A71E-C7D89A3081A4/3f/1b2c3d0c/WebHostBuilder.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
+        <state relative-caret-position="570">
           <caret line="38" column="11" lean-forward="false" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-          <folding>
-            <marker date="1506947467000" expanded="false" signature="6:332" ph="..." />
-            <marker date="1506947467000" expanded="true" signature="381:5160" ph="{...}" />
-            <marker date="1506947467000" expanded="true" signature="421:531" ph="/// Cannot unit test things in this class due to use of extension methods ... " />
-            <marker date="1506947467000" expanded="true" signature="609:5158" ph="{...}" />
-            <marker date="1506947467000" expanded="true" signature="647:785" ph="{...}" />
-            <marker date="1506947467000" expanded="true" signature="909:5152" ph="{...}" />
-            <marker date="1506947467000" expanded="true" signature="931:1077" ph="/* HACK: This is a complete hack to simply test creating a new pipeline that has its own DI services registered ... */" />
-            <marker date="1506947467000" expanded="true" signature="1778:1968" ph="{...}" />
-            <marker date="1506947467000" expanded="true" signature="1843:1956" ph="{...}" />
-            <marker date="1506947467000" expanded="true" signature="2174:2635" ph="{...}" />
-            <marker date="1506947467000" expanded="true" signature="2302:2579" ph="{...}" />
-            <marker date="1506947467000" expanded="true" signature="2432:2564" ph="{...}" />
-            <marker date="1506947467000" expanded="true" signature="2650:3461" ph="{...}" />
-            <marker date="1506947467000" expanded="true" signature="2794:3401" ph="{...}" />
-            <marker date="1506947467000" expanded="true" signature="2905:3386" ph="{...}" />
-            <marker date="1506947467000" expanded="true" signature="3107:3257" ph="/* See https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation/issues/87 ... */" />
-            <marker date="1506947467000" expanded="true" signature="3601:5142" ph="/* var builder = app.New(); ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ocelot/DependencyInjection/ServiceCollectionExtensions.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="244" column="21" lean-forward="false" selection-start-line="244" selection-start-column="21" selection-end-line="244" selection-end-column="21" />
+        <state relative-caret-position="3075">
+          <caret line="256" column="17" lean-forward="false" selection-start-line="256" selection-start-column="17" selection-end-line="256" selection-end-column="17" />
           <folding>
             <marker date="1506947555000" expanded="false" signature="6:1816" ph="..." />
             <marker date="1506947555000" expanded="true" signature="1854:15364" ph="{...}" />
@@ -1210,6 +1100,113 @@
             <marker date="1506947555000" expanded="true" signature="14349:15330" ph="{...}" />
             <marker date="1506947555000" expanded="true" signature="14595:15210" ph="{...}" />
             <marker date="1506947555000" expanded="true" signature="14864:15042" ph="/* See: https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation/issues/87 ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/AdministrationTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <marker date="1505657998000" expanded="false" signature="6:373" ph="..." />
+            <marker date="1505657998000" expanded="true" signature="474:18297" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="527:18295" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="977:1205" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="1301:1884" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="1378:1554" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="1462:1540" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="1982:2703" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="2062:2243" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="2148:2228" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="2795:3604" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="2872:3048" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="2956:3034" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="3675:6034" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="3752:5516" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="3836:4174" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="4046:4155" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="4243:5502" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="4303:4862" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="4723:4840" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="4922:5484" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="5346:5462" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="6132:9306" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="6216:7307" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="6300:6378" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="6447:7293" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="6507:6859" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="6919:7275" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="7384:8505" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="7468:7546" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="7615:8491" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="7675:8034" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="8094:8473" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="9364:11386" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="9448:10861" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="9532:9610" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="9679:10847" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="9739:10252" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="10159:10230" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="10312:10829" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="10736:10807" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="11452:11954" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="11742:11815" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="12033:12234" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="12297:12504" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="12603:12904" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="12973:13184" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="13258:14784" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="14112:14774" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="14841:14984" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="15048:16194" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="15194:15644" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="16239:16682" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="16477:16549" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="16768:17557" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="17005:17081" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="17344:17420" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="17618:17696" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="17757:17838" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="17925:18012" ph="{...}" />
+            <marker date="1505657998000" expanded="true" signature="18043:18289" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Factory/IAuthenticationHandlerFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="50" />
+          <folding>
+            <marker date="1504724147000" expanded="false" signature="6:59" ph="..." />
+            <marker date="1504724147000" expanded="true" signature="108:352" ph="{...}" />
+            <marker date="1504724147000" expanded="true" signature="233:350" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <marker date="1506947754000" expanded="false" signature="6:332" ph="..." />
+            <marker date="1506947754000" expanded="true" signature="381:3826" ph="{...}" />
+            <marker date="1506947754000" expanded="true" signature="421:531" ph="/// Cannot unit test things in this class due to use of extension methods ... " />
+            <marker date="1506947754000" expanded="true" signature="609:3824" ph="{...}" />
+            <marker date="1506947754000" expanded="true" signature="647:785" ph="{...}" />
+            <marker date="1506947754000" expanded="true" signature="909:3818" ph="{...}" />
+            <marker date="1506947754000" expanded="true" signature="929:1304" ph="/* HACK: This is a complete hack to simply test creating a new pipeline that has its own DI services registered ... */" />
+            <marker date="1506947754000" expanded="true" signature="2015:2205" ph="{...}" />
+            <marker date="1506947754000" expanded="true" signature="2080:2193" ph="{...}" />
+            <marker date="1506947754000" expanded="true" signature="2411:2872" ph="{...}" />
+            <marker date="1506947754000" expanded="true" signature="2539:2816" ph="{...}" />
+            <marker date="1506947754000" expanded="true" signature="2669:2801" ph="{...}" />
+            <marker date="1506947754000" expanded="true" signature="2887:3698" ph="{...}" />
+            <marker date="1506947754000" expanded="true" signature="3031:3638" ph="{...}" />
+            <marker date="1506947754000" expanded="true" signature="3142:3623" ph="{...}" />
+            <marker date="1506947754000" expanded="true" signature="3344:3494" ph="/* See https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation/issues/87 ... */" />
           </folding>
         </state>
       </provider>

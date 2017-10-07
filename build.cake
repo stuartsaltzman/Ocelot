@@ -377,12 +377,21 @@ private void GenerateReleaseNotes(ConvertableFilePath file)
 /// Publishes code and symbols packages to nuget feed, based on contents of artifacts file
 private void PublishPackages(ConvertableDirectoryPath packagesDir, ConvertableFilePath artifactsFile, string feedApiKey, string codeFeedUrl, string symbolFeedUrl)
 {
-	throw new NotImplementedException("PublishPackages temporarily disabled  due to Cake build error: The type 'Dictionary<,>' is defined in an assembly that is not referenced. You must add a reference to assembly 'System.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'");
-	/*
+	//throw new NotImplementedException("PublishPackages temporarily disabled  due to Cake build error: The type 'Dictionary<,>' is defined in an assembly that is not referenced. You must add a reference to assembly 'System.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'");
+	/* 
 	var artifacts = System.IO.File
 		.ReadAllLines(artifactsFile)
 		.Select(l => l.Split(':'))
 		.ToDictionary(v => v[0], v => v[1]);
+	*/
+	
+	var artifactsKeyValues = System.IO.File
+		.ReadAllLines(artifactsFile)
+		.Select(l => l.Split(':'));
+
+	var artifacts = new Dictionary<string, string>();
+	foreach (var element in artifactsKeyValues)
+		artifacts.Add(element[0], element[1]);
 
 	var codePackage = packagesDir + File(artifacts["nuget"]);
 
@@ -394,7 +403,7 @@ private void PublishPackages(ConvertableDirectoryPath packagesDir, ConvertableFi
 			ApiKey = feedApiKey,
 			Source = codeFeedUrl
 		});
-	*/
+	
 }
 
 /// gets the resource from the specified url

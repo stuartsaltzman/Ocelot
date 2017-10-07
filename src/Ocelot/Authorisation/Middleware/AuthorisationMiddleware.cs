@@ -11,17 +11,15 @@ using System.Threading.Tasks;
 namespace Ocelot.Authorisation.Middleware
 {
     using Errors;
-    
+
     public class AuthorisationMiddleware : OcelotMiddleware
     {
         private readonly RequestDelegate _next;
-	    private readonly IApplicationBuilder _app;
         private readonly IClaimsAuthoriser _claimsAuthoriser;
         private readonly IScopesAuthoriser _scopesAuthoriser;
         private readonly IOcelotLogger _logger;
 
         public AuthorisationMiddleware(RequestDelegate next,
-	        IApplicationBuilder app,
             IRequestScopedDataRepository requestScopedDataRepository,
             IClaimsAuthoriser claimsAuthoriser,
             IScopesAuthoriser scopesAuthoriser,
@@ -29,7 +27,6 @@ namespace Ocelot.Authorisation.Middleware
             : base(requestScopedDataRepository)
         {
             _next = next;
-	        _app = app;
             _claimsAuthoriser = claimsAuthoriser;
             _scopesAuthoriser = scopesAuthoriser;
             _logger = loggerFactory.CreateLogger<AuthorisationMiddleware>();

@@ -15,7 +15,7 @@
     using TestStack.BDDfy;
     using Xunit;
 
-    public class AuthorisationMiddlewareTests : ServerHostedMiddlewareTest
+    public sealed class AuthorisationMiddlewareTests : ServerHostedMiddlewareTest
     {
         private readonly Mock<IClaimsAuthoriser> _authService;
         private readonly Mock<IScopesAuthoriser> _authScopesService;
@@ -32,7 +32,7 @@
         [Fact]
         public void should_call_authorisation_service()
         {
-            this.Given(x => x.GivenTheDownStreamRouteIs(new DownstreamRoute(new List<UrlPathPlaceholderNameAndValue>(), 
+            this.Given(x => x.GivenTheDownStreamRouteIs(new DownstreamRoute(new List<UrlPathPlaceholderNameAndValue>(),
                 new ReRouteBuilder()
                     .WithIsAuthorised(true)
                     .WithUpstreamHttpMethod(new List<string> { "Get" })

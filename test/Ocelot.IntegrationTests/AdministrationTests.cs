@@ -29,12 +29,21 @@ namespace Ocelot.IntegrationTests
         private IWebHostBuilder _webHostBuilderTwo;
         private IWebHost _builderTwo;
 
+        private static string AdminUserName = "admin";
+        private static string AdminPassword = "secret";
+        private readonly string _userCredentialSalt;
+        private readonly string _userCredentialHash;
+
         public AdministrationTests()
         {
             _httpClient = new HttpClient();
             _httpClientTwo = new HttpClient();
             _ocelotBaseUrl = "http://localhost:5000";
             _httpClient.BaseAddress = new Uri(_ocelotBaseUrl);
+
+            var userCredentials = ManualTest.Utilities.GenerateUserCredentials(AdminPassword);
+            _userCredentialSalt = userCredentials.Salt;
+            _userCredentialHash = userCredentials.Hash;
         }
 
         [Fact]
@@ -49,6 +58,7 @@ namespace Ocelot.IntegrationTests
             };
 
             this.Given(x => GivenThereIsAConfiguration(configuration))
+                .And(_ => GivenIdentityServerAdminEnvironmentalVariablesAreSet())
                 .And(x => GivenOcelotIsRunning())
                 .When(x => WhenIGetUrlOnTheApiGateway("/administration/configuration"))
                 .Then(x => ThenTheStatusCodeShouldBe(HttpStatusCode.Unauthorized))
@@ -67,6 +77,7 @@ namespace Ocelot.IntegrationTests
              };
 
              this.Given(x => GivenThereIsAConfiguration(configuration))
+                 .And(_ => GivenIdentityServerAdminEnvironmentalVariablesAreSet())
                  .And(x => GivenOcelotIsRunning())
                  .And(x => GivenIHaveAnOcelotToken("/administration"))
                  .And(x => GivenIHaveAddedATokenToMyRequest())
@@ -88,6 +99,7 @@ namespace Ocelot.IntegrationTests
 
             this.Given(x => GivenThereIsAConfiguration(configuration))
                 .And(x => GivenIdentityServerSigningEnvironmentalVariablesAreSet())
+                .And(_ => GivenIdentityServerAdminEnvironmentalVariablesAreSet())
                 .And(x => GivenOcelotIsRunning())
                 .And(x => GivenIHaveAnOcelotToken("/administration"))
                 .And(x => GivenAnotherOcelotIsRunning("http://localhost:5007"))
@@ -146,6 +158,7 @@ namespace Ocelot.IntegrationTests
             };
 
             this.Given(x => GivenThereIsAConfiguration(configuration))
+                .And(_ => GivenIdentityServerAdminEnvironmentalVariablesAreSet())
                 .And(x => GivenOcelotIsRunning())
                 .And(x => GivenIHaveAnOcelotToken("/administration"))
                 .And(x => GivenIHaveAddedATokenToMyRequest())
@@ -217,6 +230,7 @@ namespace Ocelot.IntegrationTests
             };
 
             this.Given(x => GivenThereIsAConfiguration(initialConfiguration))
+                .And(_ => GivenIdentityServerAdminEnvironmentalVariablesAreSet())
                 .And(x => GivenOcelotIsRunning())
                 .And(x => GivenIHaveAnOcelotToken("/administration"))
                 .And(x => GivenIHaveAddedATokenToMyRequest())
@@ -272,6 +286,7 @@ namespace Ocelot.IntegrationTests
             var regionToClear = "gettest";
 
             this.Given(x => GivenThereIsAConfiguration(initialConfiguration))
+                .And(_ => GivenIdentityServerAdminEnvironmentalVariablesAreSet())
                 .And(x => GivenOcelotIsRunning())
                 .And(x => GivenIHaveAnOcelotToken("/administration"))
                 .And(x => GivenIHaveAddedATokenToMyRequest())
@@ -300,8 +315,15 @@ namespace Ocelot.IntegrationTests
 
         private void GivenIdentityServerSigningEnvironmentalVariablesAreSet()
         {
-            Environment.SetEnvironmentVariable("OCELOT_CERTIFICATE", "idsrv3test.pfx");
-            Environment.SetEnvironmentVariable("OCELOT_CERTIFICATE_PASSWORD", "idsrv3test");
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.Certificate, "idsrv3test.pfx");
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.CertificatePassword, "idsrv3test");
+        }
+
+        private void GivenIdentityServerAdminEnvironmentalVariablesAreSet()
+        {
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.AdminUserName, AdminUserName);
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.AdminHash, _userCredentialHash);
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.AdminSalt, _userCredentialSalt);
         }
 
         private void WhenIGetUrlOnTheSecondOcelot(string url)
@@ -434,10 +456,18 @@ namespace Ocelot.IntegrationTests
 
         public void Dispose()
         {
-            Environment.SetEnvironmentVariable("OCELOT_CERTIFICATE", "");
-            Environment.SetEnvironmentVariable("OCELOT_CERTIFICATE_PASSWORD", "");
+            ClearEnvironmentVariables();
             _builder?.Dispose();
             _httpClient?.Dispose();
+        }
+
+        private void ClearEnvironmentVariables()
+        {
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.AdminUserName, String.Empty);
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.AdminHash, String.Empty);
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.AdminSalt, String.Empty);
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.Certificate, String.Empty);
+            Environment.SetEnvironmentVariable(Configuration.Creator.IdentityServerConfigurationCreator.EnvironmentVariables.CertificatePassword, String.Empty);
         }
     }
 }

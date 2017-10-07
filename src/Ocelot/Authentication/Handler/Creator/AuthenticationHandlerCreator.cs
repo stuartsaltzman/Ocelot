@@ -28,7 +28,7 @@ namespace Ocelot.Authentication.Handler.Creator
 	        // HACK: This is a complete hack to simply test creating a new pipeline that has its own DI services registered
 	        // with its own pipeline. However, if the IAuthenticationHandlerFactory stored/cache the for each 
 	        // downstream API authentication config then this may be the best approach since it would keep the
-	        // pipelines isolated from each other.
+	        // pipelines isolated from each other. 
 	        
 	        RequestDelegate CreatePipeline(Action<IServiceCollection> servicesConfiguration)
 	        {

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f9db713-33c0-4b93-8b57-95a5fa10da98" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Ocelot/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.cake" afterPath="$PROJECT_DIR$/build.cake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs" afterPath="$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,25 +16,25 @@
       <file leaf-file-name="AuthenticationHandlerCreator.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="264">
+              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
               <folding>
-                <marker date="1506947754000" expanded="false" signature="6:332" ph="..." />
-                <marker date="1506947754000" expanded="true" signature="381:3826" ph="{...}" />
-                <marker date="1506947754000" expanded="true" signature="421:531" ph="/// Cannot unit test things in this class due to use of extension methods ... " />
-                <marker date="1506947754000" expanded="true" signature="609:3824" ph="{...}" />
-                <marker date="1506947754000" expanded="true" signature="647:785" ph="{...}" />
-                <marker date="1506947754000" expanded="true" signature="909:3818" ph="{...}" />
-                <marker date="1506947754000" expanded="true" signature="929:1304" ph="/* HACK: This is a complete hack to simply test creating a new pipeline that has its own DI services registered ... */" />
-                <marker date="1506947754000" expanded="true" signature="2015:2205" ph="{...}" />
-                <marker date="1506947754000" expanded="true" signature="2080:2193" ph="{...}" />
-                <marker date="1506947754000" expanded="true" signature="2411:2872" ph="{...}" />
-                <marker date="1506947754000" expanded="true" signature="2539:2816" ph="{...}" />
-                <marker date="1506947754000" expanded="true" signature="2669:2801" ph="{...}" />
-                <marker date="1506947754000" expanded="true" signature="2887:3698" ph="{...}" />
-                <marker date="1506947754000" expanded="true" signature="3031:3638" ph="{...}" />
-                <marker date="1506947754000" expanded="true" signature="3142:3623" ph="{...}" />
-                <marker date="1506947754000" expanded="true" signature="3344:3494" ph="/* See https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation/issues/87 ... */" />
+                <marker date="1507388301000" expanded="false" signature="6:332" ph="..." />
+                <marker date="1507388301000" expanded="true" signature="381:3827" ph="{...}" />
+                <marker date="1507388301000" expanded="true" signature="421:531" ph="/// Cannot unit test things in this class due to use of extension methods ... " />
+                <marker date="1507388301000" expanded="true" signature="609:3825" ph="{...}" />
+                <marker date="1507388301000" expanded="true" signature="647:785" ph="{...}" />
+                <marker date="1507388301000" expanded="true" signature="909:3819" ph="{...}" />
+                <marker date="1507388301000" expanded="true" signature="929:1305" ph="/* HACK: This is a complete hack to simply test creating a new pipeline that has its own DI services registered ... */" />
+                <marker date="1507388301000" expanded="true" signature="2016:2206" ph="{...}" />
+                <marker date="1507388301000" expanded="true" signature="2081:2194" ph="{...}" />
+                <marker date="1507388301000" expanded="true" signature="2412:2873" ph="{...}" />
+                <marker date="1507388301000" expanded="true" signature="2540:2817" ph="{...}" />
+                <marker date="1507388301000" expanded="true" signature="2670:2802" ph="{...}" />
+                <marker date="1507388301000" expanded="true" signature="2888:3699" ph="{...}" />
+                <marker date="1507388301000" expanded="true" signature="3032:3639" ph="{...}" />
+                <marker date="1507388301000" expanded="true" signature="3143:3624" ph="{...}" />
+                <marker date="1507388301000" expanded="true" signature="3345:3495" ph="/* See https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation/issues/87 ... */" />
               </folding>
             </state>
           </provider>
@@ -45,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/AdministrationTests.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <marker date="1505657998000" expanded="false" signature="6:373" ph="..." />
                 <marker date="1505657998000" expanded="true" signature="474:18297" ph="{...}" />
@@ -665,12 +664,12 @@
       <workItem from="1506867695192" duration="7413000" />
       <workItem from="1506875168895" duration="271000" />
       <workItem from="1506875462864" duration="4256000" />
-      <workItem from="1507385973671" duration="1359000" />
+      <workItem from="1507385973671" duration="1771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57321000" />
+    <option name="totallyTimeSpent" value="57733000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1107,7 +1106,7 @@
     <entry file="file://$PROJECT_DIR$/test/Ocelot.IntegrationTests/AdministrationTests.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <marker date="1505657998000" expanded="false" signature="6:373" ph="..." />
             <marker date="1505657998000" expanded="true" signature="474:18297" ph="{...}" />
@@ -1188,25 +1187,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ocelot/Authentication/Handler/Creator/AuthenticationHandlerCreator.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="264">
+          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
           <folding>
-            <marker date="1506947754000" expanded="false" signature="6:332" ph="..." />
-            <marker date="1506947754000" expanded="true" signature="381:3826" ph="{...}" />
-            <marker date="1506947754000" expanded="true" signature="421:531" ph="/// Cannot unit test things in this class due to use of extension methods ... " />
-            <marker date="1506947754000" expanded="true" signature="609:3824" ph="{...}" />
-            <marker date="1506947754000" expanded="true" signature="647:785" ph="{...}" />
-            <marker date="1506947754000" expanded="true" signature="909:3818" ph="{...}" />
-            <marker date="1506947754000" expanded="true" signature="929:1304" ph="/* HACK: This is a complete hack to simply test creating a new pipeline that has its own DI services registered ... */" />
-            <marker date="1506947754000" expanded="true" signature="2015:2205" ph="{...}" />
-            <marker date="1506947754000" expanded="true" signature="2080:2193" ph="{...}" />
-            <marker date="1506947754000" expanded="true" signature="2411:2872" ph="{...}" />
-            <marker date="1506947754000" expanded="true" signature="2539:2816" ph="{...}" />
-            <marker date="1506947754000" expanded="true" signature="2669:2801" ph="{...}" />
-            <marker date="1506947754000" expanded="true" signature="2887:3698" ph="{...}" />
-            <marker date="1506947754000" expanded="true" signature="3031:3638" ph="{...}" />
-            <marker date="1506947754000" expanded="true" signature="3142:3623" ph="{...}" />
-            <marker date="1506947754000" expanded="true" signature="3344:3494" ph="/* See https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation/issues/87 ... */" />
+            <marker date="1507388301000" expanded="false" signature="6:332" ph="..." />
+            <marker date="1507388301000" expanded="true" signature="381:3827" ph="{...}" />
+            <marker date="1507388301000" expanded="true" signature="421:531" ph="/// Cannot unit test things in this class due to use of extension methods ... " />
+            <marker date="1507388301000" expanded="true" signature="609:3825" ph="{...}" />
+            <marker date="1507388301000" expanded="true" signature="647:785" ph="{...}" />
+            <marker date="1507388301000" expanded="true" signature="909:3819" ph="{...}" />
+            <marker date="1507388301000" expanded="true" signature="929:1305" ph="/* HACK: This is a complete hack to simply test creating a new pipeline that has its own DI services registered ... */" />
+            <marker date="1507388301000" expanded="true" signature="2016:2206" ph="{...}" />
+            <marker date="1507388301000" expanded="true" signature="2081:2194" ph="{...}" />
+            <marker date="1507388301000" expanded="true" signature="2412:2873" ph="{...}" />
+            <marker date="1507388301000" expanded="true" signature="2540:2817" ph="{...}" />
+            <marker date="1507388301000" expanded="true" signature="2670:2802" ph="{...}" />
+            <marker date="1507388301000" expanded="true" signature="2888:3699" ph="{...}" />
+            <marker date="1507388301000" expanded="true" signature="3032:3639" ph="{...}" />
+            <marker date="1507388301000" expanded="true" signature="3143:3624" ph="{...}" />
+            <marker date="1507388301000" expanded="true" signature="3345:3495" ph="/* See https://github.com/IdentityServer/IdentityServer4.AccessTokenValidation/issues/87 ... */" />
           </folding>
         </state>
       </provider>

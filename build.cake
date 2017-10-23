@@ -375,26 +375,26 @@ private void GenerateReleaseNotes(ConvertableFilePath file)
 /// Publishes code and symbols packages to nuget feed, based on contents of artifacts file
 private void PublishPackages(ConvertableDirectoryPath packagesDir, ConvertableFilePath artifactsFile, string feedApiKey, string codeFeedUrl, string symbolFeedUrl)
 {
-	// Temp workaround: 'ToDictionary(v => v[0], v => v[1])' fails on Mac
-	// See https://github.com/TomPallister/Ocelot/issues/98)
-	var artifactsKeyValues = System.IO.File
-		.ReadAllLines(artifactsFile)
-		.Select(l => l.Split(':'));
+		// Temp workaround: 'ToDictionary(v => v[0], v => v[1])' fails on Mac
+		// See https://github.com/TomPallister/Ocelot/issues/98)
+		var artifactsKeyValues = System.IO.File
+			.ReadAllLines(artifactsFile)
+			.Select(l => l.Split(':'));
 
-	var artifacts = new Dictionary<string, string>();
-	foreach (var element in artifactsKeyValues)
-		artifacts.Add(element[0], element[1]);
+		var artifacts = new Dictionary<string, string>();
+		foreach (var element in artifactsKeyValues)
+			artifacts.Add(element[0], element[1]);
 
-	var codePackage = packagesDir + File(artifacts["nuget"]);
+		var codePackage = packagesDir + File(artifacts["nuget"]);
 
-	Information("Pushing package " + codePackage);
+		Information("Pushing package " + codePackage);
 
-	NuGetPush(
-		codePackage,
-		new NuGetPushSettings {
-			ApiKey = feedApiKey,
-			Source = codeFeedUrl
-		});
+        NuGetPush(
+            codePackage,
+            new NuGetPushSettings {
+                ApiKey = feedApiKey,
+                Source = codeFeedUrl
+            });
 }
 
 /// gets the resource from the specified url

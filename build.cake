@@ -375,14 +375,8 @@ private void GenerateReleaseNotes(ConvertableFilePath file)
 /// Publishes code and symbols packages to nuget feed, based on contents of artifacts file
 private void PublishPackages(ConvertableDirectoryPath packagesDir, ConvertableFilePath artifactsFile, string feedApiKey, string codeFeedUrl, string symbolFeedUrl)
 {
-		// Temp workaround: ToDictionary fails on Mac (see https://github.com/TomPallister/Ocelot/issues/98)
-        /*
-		var artifacts = System.IO.File
-            .ReadAllLines(artifactsFile)
-            .Select(l => l.Split(':'))
-            .ToDictionary(v => v[0], v => v[1]);
- 		*/
-		 
+		// Temp workaround: 'ToDictionary(v => v[0], v => v[1])' fails on Mac
+		// See https://github.com/TomPallister/Ocelot/issues/98)
 		var artifactsKeyValues = System.IO.File
 			.ReadAllLines(artifactsFile)
 			.Select(l => l.Split(':'));
